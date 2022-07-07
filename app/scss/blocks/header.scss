@@ -1,0 +1,159 @@
+.header {
+    background-color: $bg;
+    color: #FFFFFF;
+    font: 300 18px/24px 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+    background: url("../../img/back-desktop.jpg") no-repeat top center/cover;
+    position: relative;
+}
+
+// .container {
+//     max-width: 1240px;
+//     margin: 0 auto;
+//     padding-left: 20px;
+//     padding-right: 20px;
+// }
+
+.header__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 0 130px;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    margin-right: 60px;
+}
+
+.header__logo-icon {}
+
+.header__logo-img {}
+
+.nav {
+    flex-grow: 1;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    gap: 42px;
+}
+
+.nav__item {
+    padding-top: 38px;
+    padding-bottom: 38px;
+    justify-content: space-between;
+}
+
+.nav__link {
+    display: block;
+    padding: 8px 18px;
+    color: #FAFAFA;
+    font: 400 18px/18px 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+    text-decoration: none;
+}
+
+.burger {    
+    width: 50px;
+    height: 24px;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    position: relative;
+    display: none;
+
+    // @include media($mobile) {
+    //     .burger {
+    //         display: block;
+    //     }
+    // }
+
+    // @include media($tablet) {
+    //     .burger {
+    //         display: block;
+    //     }
+    // }
+}
+
+.burger__line {
+    height: 3px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin-top: -1.5px;
+}
+
+.burger__line::after,
+.burger__line::before {
+    content: " ";
+    position: absolute;
+    inset: 0;
+    background-color: #FFFFFF;
+    transform: translateY(10px);
+    transition: transform 0.2s ease;
+}
+
+.burger__line:after {
+    transform: translateY(-10px);
+}
+
+.header__intro {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-left: 130px;
+    margin-top: 114px;
+}
+
+.header__slogan {
+    font-size: 50px;
+    line-height: 68px;
+    text-align: center;   
+    margin-bottom: 51px; 
+}
+
+.header__img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.header__btn {
+    padding: 16px 32px;
+    color: #FFFFFF;
+    text-align: center;
+    font: 700 21px/18px 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+    text-decoration: none;
+    border: 3px solid #FFFFFF;
+    border-radius: 29px;
+
+    // @include media($mobile) {
+    //     padding: 21px 39px;
+    // }
+    
+    // @include media($tablet) {
+    //     padding: 21px 49px;
+    // }
+}
+
+.header__download-list {
+    display: flex;
+}
+
+.header__download-item {}
+
+.header__download-link {
+    
+}
+
+.header__download-txt {
+    padding-bottom: 130px;
+}

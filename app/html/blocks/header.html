@@ -1,7 +1,10 @@
-<header>
-    <div class="header__top">
+<header class="header">
+    <div class="header__top container">
         <a class="header__logo" href="index.html">
-            <img class="header__logo-img" src="../../img/pink_logo.svg" width="74" height=23" alt="Логотип Pink." />
+            <svg class="header__logo-icon" width="59" height="40" aria-label="Логотип Pink" role="img">
+                <use xlink:href="img/glasses.svg#glasses"></use>
+            </svg>
+            <img class="header__logo-img" src="img/pink_logo.svg" width="74" height="23" alt="Логотип Pink." />
         </a>
         <nav class="js-nav nav">
             <ul class="nav__list">
@@ -15,41 +18,44 @@
                     <a class="nav__link" href="#">Конкурс</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="#">html academy</a>
+                    <a class="nav__link" href="#">HTML Academy</a>
                 </li>
             </ul>
         </nav>
         <button class="js-burger burger" type="button" aria-label="открыть меню">
             <span class="burger__line"></span>
-        </button> 
-        <p class="header__slogan">Взгляните на жизнь <br> иначе!</p> 
-        <img class="header__picture" src="../../img/phone.png" width="320" height=286" alt="приложение pink.">              
-    </div>    
-    <div class="header__download">
-        <a class="header__download-button" href="#">Скачать приложение</a>
+        </button>
+    </div>
+    <div class="header__intro">
+        <p class="header__slogan">Взгляните на жизнь <br> иначе!</p>
+        <img class="header__img" src="img/phone.png" width="1050" height="645" alt="приложение pink.">
+        <a class="header__btn" href="#">Скачать приложение</a>
         <ul class="header__download-list">
             <li class="header__download-item">
-                <a class="header__download-icon" href="#" aria-label="скачать для айфон, айпад">
-                    <svg>
-                        <use xlink:href="../../img/icons/apple-logo.svg#apple"></use>
+                <a class="header__download-link" href="#">
+                    <svg class="header__apple-icon" width="47" height="56" aria-label="скачать для айфон, айпад"
+                        role="img">
+                        <use xlink:href="img/icons/apple_logo.svg#apple"></use>
                     </svg>
                 </a>
             </li>
             <li class="header__download-item">
-                <a class="header__download-icon" href="#" aria-label="скачать для андроид">
-                    <svg>
-                        <use xlink:href="../../img/icons/android-logo.svg#android"></use>
+                <a class="header__download-link" href="#">
+                    <svg class="header__android-icon" width="47" height="56" aria-label="скачать для андроид"
+                        role="img">
+                        <use xlink:href="img/icons/android-logo.svg#android"></use>
                     </svg>
                 </a>
             </li>
             <li class="header__download-item">
-                <a class="header__download-icon" href="#" aria-label="скачать для виндоус">
-                    <svg>
-                        <use xlink:href="../../img/icons/microsoft-logo.svg#microsoft"></use>
+                <a class="header__download-link" href="#">
+                    <svg class="header__microsoft-icon" width="47" height="56" aria-label="скачать для виндоус"
+                        role="img">
+                        <use xlink:href="img/icons/microsoft-logo.svg#microsoft"></use>
                     </svg>
                 </a>
             </li>
         </ul>
-        <p class="header__download-text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <p class="header__download-txt">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
     </div>
 </header>
