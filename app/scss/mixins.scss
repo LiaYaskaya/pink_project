@@ -1,0 +1,10 @@
+@mixin media($point) {
+    @media (min-width: $point) {
+        // чтобы можно было вносить стили в миксин, ставим @content
+        @content; 
+    }
+}
+
+@mixin font($fz, $lh, $fw: null, $ff: $font-variables) {
+    font: $fw #{$fz} / #{$lh} $ff;
+}

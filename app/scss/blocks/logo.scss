@@ -1,0 +1,40 @@
+.logo {   
+}
+
+.logo__icon-mobile {
+    color: #FFFFFF;
+
+    @include media($tablet) {
+        display: none;  
+    }
+
+    @include media($desktop) {
+        display: none;  
+    }
+}
+
+.logo__icon-tablet {
+    display: none;
+
+    @include media($tablet) {
+        display: block; 
+        color: #FFFFFF; 
+    }
+
+    @include media($desktop) {
+        display: none;  
+    }
+}
+
+.logo__icon-desktop {
+    display: none;
+
+    @include media($tablet) {
+        display: none;  
+    }
+
+    @include media($desktop) {
+        display: block; 
+        color: #FFFFFF; 
+    }
+}

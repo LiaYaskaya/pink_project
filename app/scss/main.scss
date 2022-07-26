@@ -1,6 +1,11 @@
 @import 'variables'; //пишем переменные
+@import 'mixins'; //импорт миксинов
 @import 'reset'; //сборс стилей
 @import 'fonts'; //подключаем шрифты (локально)
 
 //подключаем БЭМ блоки
 @import 'blocks/header';
+@import 'blocks/container';
+@import 'blocks/logo';
+@import 'blocks/burger';
+@import 'blocks/nav';

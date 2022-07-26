@@ -6,4 +6,22 @@
 
 img {
   vertical-align: top;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+ul[class],
+ol[class] {
+  list-style-type: none;
+}
+
+a[class] {
+  text-decoration: none;
+  display: block;
 }

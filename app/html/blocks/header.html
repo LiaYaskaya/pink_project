@@ -1,61 +1,74 @@
 <header class="header">
-    <div class="header__top container">
-        <a class="header__logo" href="index.html">
-            <svg class="header__logo-icon" width="59" height="40" aria-label="Логотип Pink" role="img">
-                <use xlink:href="img/glasses.svg#glasses"></use>
-            </svg>
-            <img class="header__logo-img" src="img/pink_logo.svg" width="74" height="23" alt="Логотип Pink." />
+
+  <div class="header__top">
+    <a class="logo" href="index.html">
+      <svg class="logo__icon-mobile" width="74" height="23" aria-label="Логотип Pink" role="img">
+        <use xlink:href="img/icons/sprite.svg#logo_mobile" />
+      </svg>
+      <svg class="logo__icon-tablet" width="145" height="40" aria-label="Логотип Pink" role="img">
+        <use xlink:href="img/icons/sprite.svg#logo_tablet" />
+      </svg>
+      <svg class="logo__icon-desktop" width="147" height="40" aria-label="Логотип Pink" role="img">
+        <use xlink:href="img/icons/sprite.svg#logo_desktop" />
+      </svg>
+    </a>
+    <nav class="js-nav nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="index.html">Главная</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Фотографии</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Конкурс</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+    <button class="js-burger burger" type="button" aria-label="открыть меню">
+      <span class="burger__line"></span>
+    </button>
+  </div>
+
+  <div class="header__intro container">
+    <p class="header__slogan">
+      Взгляните на жизнь <br /> иначе!
+    </p>
+    <picture class="header__pic">
+      <source class="header__pic-tablet" type="image/png" media="(min-width: $tablet)" srcset="img/phone_tablet.png" />
+      <source class="header__pic-desktop" type="image/png" media="(min-width: $desktop)" srcset="img/phone_desktop.png" />
+      <img class="header__pic-mobile" src="img/phone_mobile.png" width="320" height="286" alt="приложение pink." />
+    </picture>
+    <a class="header__btn" href="#">Скачать приложение</a>
+    <ul class="header__download-list">
+      <li class="header__download-item">
+        <a class="header__download-link" href="#">
+          <svg class="header__apple-icon" width="47" height="56" aria-label="скачать для айфон, айпад" role="img">
+            <use xlink:href="img/icons/sprite.svg#apple_logo" />
+          </svg>
         </a>
-        <nav class="js-nav nav">
-            <ul class="nav__list">
-                <li class="nav__item">
-                    <a class="nav__link" href="index.html">Главная</a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link" href="#">Фотографии</a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link" href="#">Конкурс</a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link" href="#">HTML Academy</a>
-                </li>
-            </ul>
-        </nav>
-        <button class="js-burger burger" type="button" aria-label="открыть меню">
-            <span class="burger__line"></span>
-        </button>
-    </div>
-    <div class="header__intro">
-        <p class="header__slogan">Взгляните на жизнь <br> иначе!</p>
-        <img class="header__img" src="img/phone.png" width="1050" height="645" alt="приложение pink.">
-        <a class="header__btn" href="#">Скачать приложение</a>
-        <ul class="header__download-list">
-            <li class="header__download-item">
-                <a class="header__download-link" href="#">
-                    <svg class="header__apple-icon" width="47" height="56" aria-label="скачать для айфон, айпад"
-                        role="img">
-                        <use xlink:href="img/icons/apple_logo.svg#apple"></use>
-                    </svg>
-                </a>
-            </li>
-            <li class="header__download-item">
-                <a class="header__download-link" href="#">
-                    <svg class="header__android-icon" width="47" height="56" aria-label="скачать для андроид"
-                        role="img">
-                        <use xlink:href="img/icons/android-logo.svg#android"></use>
-                    </svg>
-                </a>
-            </li>
-            <li class="header__download-item">
-                <a class="header__download-link" href="#">
-                    <svg class="header__microsoft-icon" width="47" height="56" aria-label="скачать для виндоус"
-                        role="img">
-                        <use xlink:href="img/icons/microsoft-logo.svg#microsoft"></use>
-                    </svg>
-                </a>
-            </li>
-        </ul>
-        <p class="header__download-txt">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-    </div>
+      </li>
+      <li class="header__download-item">
+        <a class="header__download-link" href="#">
+          <svg class="header__android-icon" width="47" height="56" aria-label="скачать для андроид" role="img">
+            <use xlink:href="img/icons/sprite.svg#android_logo" />
+          </svg>
+        </a>
+      </li>
+      <li class="header__download-item">
+        <a class="header__download-link" href="#">
+          <svg class="header__microsoft-icon" width="47" height="56" aria-label="скачать для виндоус" role="img">
+            <use xlink:href="img/icons/sprite.svg#microsoft_logo" />
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <p class="header__download-txt">
+      Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+    </p>
+  </div>
+
 </header>

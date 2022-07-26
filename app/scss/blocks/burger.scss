@@ -1,0 +1,37 @@
+.burger {
+    width: 50px;
+    height: 24px;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    position: relative;
+
+    @include media($desktop) {
+        display: none;
+    }
+}
+
+.burger__line {
+    height: 3px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin-top: -1.5px;
+}
+
+.burger__line::after,
+.burger__line::before {
+    content: " ";
+    position: absolute;
+    inset: 0;
+    background-color: #FFFFFF;
+    transform: translateY(10px);
+    transition: transform 0.2s ease;
+}
+
+.burger__line:after {
+    transform: translateY(-10px);
+}
