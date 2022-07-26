@@ -1,15 +1,26 @@
-.logo {   
+.logo {
+    padding-top: 19px;
+    padding-bottom: 19px;
+
+    @include media($tablet) {
+        padding-top: 27px;
+        padding-bottom: 43px;
+    }
+
+    @include media($desktop) {
+        margin-right: 170px;
+    }
 }
 
 .logo__icon-mobile {
     color: #FFFFFF;
 
     @include media($tablet) {
-        display: none;  
+        display: none;
     }
 
     @include media($desktop) {
-        display: none;  
+        display: none;
     }
 }
 
@@ -17,12 +28,12 @@
     display: none;
 
     @include media($tablet) {
-        display: block; 
-        color: #FFFFFF; 
+        display: block;
+        color: #FFFFFF;
     }
 
     @include media($desktop) {
-        display: none;  
+        display: none;
     }
 }
 
@@ -30,11 +41,11 @@
     display: none;
 
     @include media($tablet) {
-        display: none;  
+        display: none;
     }
 
     @include media($desktop) {
-        display: block; 
-        color: #FFFFFF; 
+        display: block;
+        color: #FFFFFF;
     }
 }

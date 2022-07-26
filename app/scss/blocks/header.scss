@@ -1,14 +1,14 @@
 .header {
     color: #FFFFFF;
     @include font(18px, 24px, 300);
-    background: url("../../img/back_mobile.jpg") no-repeat top center;
+    background: url("../img/back_mobile.jpg") no-repeat top center;
 
     @include media($tablet) {
-        background: url("../../img/back_tablet.jpg") no-repeat top center/cover;
+        background: url("../img/back_tablet.jpg") no-repeat top center/cover;
     }
 
     @include media($desktop) {
-        background: url("../../img/back_desktop.jpg") no-repeat top center/cover;
+        background: url("../img/back_desktop.jpg") no-repeat top center/cover;
     }
 
     background-color: $bg;
@@ -20,7 +20,11 @@
     justify-content: space-between;
     list-style-type: none;
     background-color: rgba(0, 0, 0, 0.3);
-    padding: 0 20px;    
+    padding: 0 20px; 
+    
+    @include media($desktop) {
+        padding: 0 130px; 
+    }
 }
 
 .header__intro {
@@ -30,7 +34,7 @@
 
     @include media($tablet) {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 300px 1fr;
     }
 }
 
@@ -106,7 +110,9 @@
 .header__download-item {
 }
 
-.header__download-link {}
+.header__download-link {
+    display: block;
+}
 
 .header__apple-icon {
     color: #FFFFFF;
