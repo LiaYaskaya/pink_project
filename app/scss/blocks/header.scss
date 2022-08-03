@@ -1,10 +1,11 @@
 .header {
     color: #FFFFFF;
     @include font(18px, 24px, 300);
-    background: url("../img/back_mobile.jpg") no-repeat top center/cover;
+    background: url("../img/back_mobile.jpg") no-repeat top center;
 
     @include media($tablet) {
         background: url("../img/back_tablet.jpg") no-repeat top center/cover;
+        // почему возникает белое пространство скраю от фона 
     }
 
     @include media($desktop) {
@@ -20,10 +21,22 @@
     justify-content: space-between;
     list-style-type: none;
     background-color: rgba(0, 0, 0, 0.3);
-    padding: 0 20px; 
-    
-    @include media($desktop) {
-        padding: 0 130px; 
+}
+
+.header__top._active {
+    background-color: #283645;
+    box-shadow:
+        0px 1px 0px #000000,
+        inset 0px 1px 0px rgba(255, 255, 255, 0.15);
+}
+
+.header__top._active>.logo {
+    padding-top: 23px;
+    padding-bottom: 23px;
+
+    @include media($tablet) {
+        padding-top: 27px;
+        padding-bottom: 43px;
     }
 }
 
@@ -35,6 +48,7 @@
     @include media($tablet) {
         display: grid;
         grid-template-columns: 300px 1fr;
+        align-items: flex-end;
     }
 }
 
@@ -46,22 +60,61 @@
     @include media($tablet) {
         @include font(40px, 48px, 300);
         padding-top: 102px;
-        padding-bottom: 51px;
+        padding-bottom: 39px;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        z-index: 1;
     }
 
     @include media($desktop) {
         @include font(50px, 68px, 300);
         padding-top: 114px;
+        padding-bottom: 51px;
     }
 }
 
 .header__pic {
-    padding-top: 34px;
+    padding-top: 23px;
     padding-bottom: 28px;
 
     @include media($tablet) {
-        grid-column: 2/3;
+        grid-column: 1/3;
         grid-row: 1/5;
+    }
+}
+
+@media (min-width: 344px) {
+    .header__pic {
+        padding-top: 23px;
+    }
+}
+
+@media (min-width: $tablet) {
+    .header__pic {
+        padding-top: 76px;
+        padding-bottom: 0;
+    }
+}
+
+@media (min-width: $desktop) {
+    .header__pic {
+        padding-top: 98px;
+        padding-bottom: 0;
+    }
+}
+
+.header__pic-mobile {
+    width: 320px;
+    height: 286px;
+
+    @include media($tablet) {
+        width: 660px;
+        height: 545px;
+    }
+
+    @include media($desktop) {
+        width: 1050px;
+        height: 645px;
     }
 }
 
@@ -74,21 +127,35 @@
     text-decoration: none;
     border: 3px solid #FFFFFF;
     border-radius: 29px;
-    margin-bottom: 38px;
+    margin-bottom: 32px;
 
     @include media($tablet) {
         width: 300px;
         padding: 15px 49px;
-        margin: 0 auto;
-        margin-bottom: 67px;
+        margin-bottom: 46px;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        z-index: 1;
     }
 
     @include media($desktop) {
         width: 300px;
-        font-size: 21px;        
+        font-size: 21px;
         padding: 16px 32px;
-        margin-bottom: 46px;
+        margin-bottom: 67px;
     }
+}
+
+.header__btn:active {
+    color: rgba(210, 40, 86, 0.3); 
+    background-color: #FFFFFF;    
+}
+
+@media (min-width: $desktop) {
+    .header__btn:hover {
+        color: #D22856; 
+        background-color: #FFFFFF;
+    }    
 }
 
 .header__download-list {
@@ -100,6 +167,9 @@
 
     @include media($tablet) {
         margin-bottom: 38px;
+        grid-column: 1/2;
+        grid-row: 3/4;
+        z-index: 1;
     }
 
     @include media($desktop) {
@@ -107,8 +177,7 @@
     }
 }
 
-.header__download-item {
-}
+.header__download-item {}
 
 .header__download-link {
     display: block;
@@ -125,12 +194,20 @@
 .header__microsoft-icon {}
 
 .header__download-txt {
-    @include font(14px, 24px, 300); 
+    @include font(14px, 24px, 300);
     text-align: center;
     padding-bottom: 38px;
+    max-width: 300px;
 
     @include media($tablet) {
-        @include font(18px, 24px, 300); 
+        @include font(18px, 24px, 300);
         padding-bottom: 119px;
+        grid-column: 1/2;
+        grid-row: 4/5;
+        z-index: 1;
+    }
+
+    @include media($desktop) {
+        padding-bottom: 130px;
     }
 }

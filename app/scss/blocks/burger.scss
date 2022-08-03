@@ -35,3 +35,21 @@
 .burger__line:after {
     transform: translateY(-10px);
 }
+
+.burger._active .burger__line {
+    background-color: transparent;
+}
+
+.burger._active .burger__line::before,
+.burger._active .burger__line::after {
+    width: 28px;
+    left: 50%;
+}
+
+.burger._active .burger__line::before {
+    transform: translateY(0) rotate(45deg);
+}
+
+.burger._active .burger__line::after {
+    transform: translateY(0) rotate(-45deg);
+}

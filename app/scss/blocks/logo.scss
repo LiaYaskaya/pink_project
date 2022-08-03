@@ -1,6 +1,6 @@
 .logo {
-    padding-top: 19px;
-    padding-bottom: 19px;
+    padding-top: 22px;
+    padding-bottom: 21px;
 
     @include media($tablet) {
         padding-top: 27px;
@@ -8,12 +8,13 @@
     }
 
     @include media($desktop) {
-        margin-right: 170px;
+        margin-right: 50px;
     }
 }
 
 .logo__icon-mobile {
     color: #FFFFFF;
+    display: block;
 
     @include media($tablet) {
         display: none;
@@ -22,6 +23,10 @@
     @include media($desktop) {
         display: none;
     }
+}
+
+.logo__icon-mobile:active {
+    color: rgba(255, 255, 255, 0.3); 
 }
 
 .logo__icon-tablet {
@@ -37,6 +42,10 @@
     }
 }
 
+.logo__icon-tablet:active {
+    color: rgba(255, 255, 255, 0.3); 
+}
+
 .logo__icon-desktop {
     display: none;
 
@@ -47,5 +56,15 @@
     @include media($desktop) {
         display: block;
         color: #FFFFFF;
+    }
+}
+
+.logo__icon-desktop:active {
+    color: rgba(255, 255, 255, 0.3); 
+}
+
+@media (min-width: $desktop) {
+    .logo__icon-desktop:hover {
+        color: #D22856; 
     }
 }

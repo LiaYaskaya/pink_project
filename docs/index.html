@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PINK</title>
-    <link rel="stylesheet" href="css/main.css?t=1658866934765">
+    <link rel="stylesheet" href="css/main.css?t=1659533016743">
 </head>
 
 <body>
@@ -13,7 +13,7 @@
     <!-- подключаем шапку -->
     <header class="header">
 
-  <div class="header__top">
+  <div class="header__top container">
     <a class="logo" href="index.html">
       <svg class="logo__icon-mobile" width="74" height="23" aria-label="Логотип Pink" role="img">
         <use xlink:href="img/icons/sprite.svg#logo_mobile" />
@@ -28,7 +28,7 @@
     <nav class="js-nav nav">
       <ul class="nav__list">
         <li class="nav__item">
-          <a class="nav__link" href="index.html">Главная</a>
+          <a class="nav__link nav__link_current" href="index.html">Главная</a>
         </li>
         <li class="nav__item">
           <a class="nav__link" href="#">Фотографии</a>
@@ -48,11 +48,12 @@
 
   <div class="header__intro container">
     <p class="header__slogan">
-      Взгляните на жизнь иначе!
+      <!-- как на планшете подогнать перенос под макет -->
+      Взгляните на жизнь <br> иначе!
     </p>
     <picture class="header__pic">
-      <source class="header__pic-tablet" type="image/png" media="(min-width: $tablet)" srcset="img/phone_tablet.png" />
-      <source class="header__pic-desktop" type="image/png" media="(min-width: $desktop)" srcset="img/phone_desktop.png" />
+      <source type="image/png" media="(min-width: 1024px)" srcset="img/phone_desktop.png" />
+      <source type="image/png" media="(min-width: 660px)" srcset="img/phone_tablet.png" />      
       <img class="header__pic-mobile" src="img/phone_mobile.png" width="320" height="286" alt="приложение pink." />
     </picture>
     <a class="header__btn" href="#">Скачать приложение</a>
