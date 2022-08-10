@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PINK</title>
-    <link rel="stylesheet" href="css/main.css?t=1659533016743">
+    <link rel="stylesheet" href="css/main.css?t=1660163433113">
 </head>
 
 <body>
@@ -47,15 +47,22 @@
   </div>
 
   <div class="header__intro container">
-    <p class="header__slogan">
-      <!-- как на планшете подогнать перенос под макет -->
-      Взгляните на жизнь <br> иначе!
-    </p>
-    <picture class="header__pic">
-      <source type="image/png" media="(min-width: 1024px)" srcset="img/phone_desktop.png" />
-      <source type="image/png" media="(min-width: 660px)" srcset="img/phone_tablet.png" />      
-      <img class="header__pic-mobile" src="img/phone_mobile.png" width="320" height="286" alt="приложение pink." />
-    </picture>
+    <div class="header__decor">
+      <p class="header__slogan">
+        <!-- как на планшете подогнать перенос под макет -->
+        Взгляните на жизнь <br> иначе!
+      </p>
+      <picture class="header__pic">
+        <!-- добавление фoрматов webp и avif кадрирование изображений для опимизации загрузки сайта -->
+        <source type="image/png" media="(min-width: 1024px)" srcset="img/phone_desktop.png" />
+        <source type="image/webp" media="(min-width: 1024px)" srcset="img/phone_desktop.webp" />
+        <!-- <source type="image/avif" media="(min-width: 1024px)" srcset="img/phone_desktop.avif" /> -->
+        <source media="(min-width: 660px)" srcset="img/phone_tablet.png, img/phone_tablet.webp" />
+       
+        <!-- <source type="image/avif" media="(min-width: 660px)" srcset="img/phone_tablet.avif" />      -->
+        <img class="header__pic-mobile" src="img/phone_mobile.png" srcset="img/phone_mobile.webp" width="320" height="286" alt="приложение pink." />
+      </picture>      
+    </div>
     <a class="header__btn" href="#">Скачать приложение</a>
     <ul class="header__download-list">
       <li class="header__download-item">

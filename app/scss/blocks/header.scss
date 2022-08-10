@@ -1,18 +1,14 @@
 .header {
     color: #FFFFFF;
     @include font(18px, 24px, 300);
-    background: url("../img/back_mobile.jpg") no-repeat top center;
 
     @include media($tablet) {
-        background: url("../img/back_tablet.jpg") no-repeat top center/cover;
-        // почему возникает белое пространство скраю от фона 
+        background: $primary-bg url("../img/back_tablet.jpg") no-repeat top center/cover;
     }
 
     @include media($desktop) {
-        background: url("../img/back_desktop.jpg") no-repeat top center/cover;
+        background: $primary-bg url("../img/back_desktop.jpg") no-repeat top center/cover;
     }
-
-    background-color: $bg;
 }
 
 .header__top {
@@ -20,35 +16,42 @@
     align-items: center;
     justify-content: space-between;
     list-style-type: none;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba($black-color, 0.3);
+    position: relative;
+    z-index: 1;
 }
 
 .header__top._active {
     background-color: #283645;
     box-shadow:
-        0px 1px 0px #000000,
-        inset 0px 1px 0px rgba(255, 255, 255, 0.15);
-}
-
-.header__top._active>.logo {
-    padding-top: 23px;
-    padding-bottom: 23px;
-
-    @include media($tablet) {
-        padding-top: 27px;
-        padding-bottom: 43px;
-    }
+        0 1px 0 #000000,
+        inset 0 1px 0 rgba(255, 255, 255, 0.15);
 }
 
 .header__intro {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-left: 0;
+    padding-right: 0;
 
     @include media($tablet) {
         display: grid;
         grid-template-columns: 300px 1fr;
         align-items: flex-end;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.header__decor {
+    background: url("../img/back_mobile.jpg") no-repeat top center/cover;
+    width: 100%;
+    margin-top: -66px;
+    padding-top: 66px;
+
+    @include media($tablet) {
+        background: transparent;
     }
 }
 
@@ -147,15 +150,15 @@
 }
 
 .header__btn:active {
-    color: rgba(210, 40, 86, 0.3); 
-    background-color: #FFFFFF;    
+    color: rgba(210, 40, 86, 0.3);
+    background-color: #FFFFFF;
 }
 
 @media (min-width: $desktop) {
     .header__btn:hover {
-        color: #D22856; 
+        color: #D22856;
         background-color: #FFFFFF;
-    }    
+    }
 }
 
 .header__download-list {
