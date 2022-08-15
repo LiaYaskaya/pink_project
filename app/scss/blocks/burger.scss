@@ -14,7 +14,7 @@
 
 .burger__line {
     height: 3px;
-    background-color: #FFFFFF;
+    background-color: $burger-bg;
     position: absolute;
     top: 50%;
     left: 0;
@@ -27,7 +27,7 @@
     content: " ";
     position: absolute;
     inset: 0;
-    background-color: #FFFFFF;
+    background-color: $burger-bg;
     transform: translateY(10px);
     transition: transform 0.2s ease;
 }

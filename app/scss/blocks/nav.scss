@@ -1,10 +1,10 @@
 .nav {
-    position: fixed;
-    top: 69px;
+    position: absolute;
+    top: 66px;
     left: 0;
     right: 0;
     z-index: 2;
-    background-color: #283645;
+    background-color: $nav-bg;
     transform: translateX(100%);
     opacity: 0;
     pointer-events: none;
@@ -12,15 +12,15 @@
     overflow-y: auto;
 
     @include media($tablet) {
-        top: 100px;
+        top: 110px;
     }
 
     @include media($desktop) {
         position: static;
         display: block;
-        flex-grow: 1;   
-        transform: translateX(0);   
-        opacity: 1; 
+        flex-grow: 1;
+        transform: translateX(0);
+        opacity: 1;
         background-color: transparent;
     }
 }
@@ -40,29 +40,29 @@
     @include media($desktop) {
         flex-direction: row;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-end;
         gap: 60px;
     }
 }
 
 .nav__item {
-    background-color: #283645;
+    background-color: $nav-item-bg;
     box-shadow:
-        0px 1px 0px #000000,
-        inset 0px 1px 0px rgba(255, 255, 255, 0.15);
+        0 0 0 1px $nav-shadow,
+        inset 0 0 0 1px rgba($nav-inner-shadow, 0.15);
 
     @include media($desktop) {
         padding-top: 26px;
         padding-bottom: 26px;
         background-color: transparent;
-        box-shadow: none;        
+        box-shadow: none;
     }
 }
 
 .nav__link {
     display: block;
     padding: 15px;
-    color: #FFFFFF;
+    color: $nav-link-color;
     @include font(18px, 32px, 700);
     text-decoration: none;
     text-transform: uppercase;
@@ -81,13 +81,13 @@
     }
 
     .nav__link:hover {
-        color: #D22856; 
+        color: $nav-hover-color;
     }
 
     .nav__link_current::before {
         content: "";
         position: absolute;
-        background-color: #FFFFFF;
+        background-color: $nav-current-bg;
         height: 2px;
         right: 15px;
         left: 15px;

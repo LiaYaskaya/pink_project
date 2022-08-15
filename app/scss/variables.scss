@@ -1,9 +1,39 @@
 //backgrounds
 $primary-bg: #1D2631;
-$black-color: #000000;
+$top-bg: #000000;
+$nav-bg: #283645;
+$nav-item-bg: #283645;
+$burger-bg: #FFFFFF;
+
+//backgrounds-conditions
+$top-active-bg: #283645;
+$btn-active-bg: #FFFFFF;
+$btn-hover-bg: #FFFFFF;
+$nav-current-bg: #FFFFFF;
+
+//сolors
+$primary-color: #FFFFFF;
+$logo-mobile-color: #FFFFFF;
+$logo-tablet-color: #FFFFFF;
+$logo-desktop-color: #FFFFFF;
+$btn-color: #FFFFFF;
+$apple-icon-color: #FFFFFF;
+$android-icon-color: #A4C639;
+$nav-link-color: #FFFFFF;
+
+//сolors-conditions
+$btn-active-color: #D22856;
+$btn-hover-color: #D22856;
+$nav-hover-color: #D22856;
+$logo-hover-color: #D22856;
+
+// colors-borders and shadows
+$nav-shadow: #000000;
+$nav-inner-shadow: #FFFFFF;
+$btn-border: #FFFFFF;
 
 //devices
-$mobile: 575px;
+$mobile: 330px;
 $tablet: 660px;
 $desktop: 1024px;
 

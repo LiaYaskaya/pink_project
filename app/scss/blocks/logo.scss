@@ -13,7 +13,7 @@
 }
 
 .logo__icon-mobile {
-    color: #FFFFFF;
+    color: $logo-mobile-color;
     display: block;
 
     @include media($tablet) {
@@ -34,7 +34,7 @@
 
     @include media($tablet) {
         display: block;
-        color: #FFFFFF;
+        color: $logo-tablet-color;
     }
 
     @include media($desktop) {
@@ -55,7 +55,7 @@
 
     @include media($desktop) {
         display: block;
-        color: #FFFFFF;
+        color: $logo-desktop-color;
     }
 }
 
@@ -65,6 +65,6 @@
 
 @media (min-width: $desktop) {
     .logo__icon-desktop:hover {
-        color: #D22856; 
+        color: $logo-hover-color; 
     }
 }

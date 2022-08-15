@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PINK</title>
-    <link rel="stylesheet" href="css/main.css?t=1660163433113">
+    <link rel="stylesheet" href="css/main.css?t=1660590915994">
 </head>
 
 <body>
@@ -13,55 +13,58 @@
     <!-- подключаем шапку -->
     <header class="header">
 
-  <div class="header__top container">
-    <a class="logo" href="index.html">
-      <svg class="logo__icon-mobile" width="74" height="23" aria-label="Логотип Pink" role="img">
-        <use xlink:href="img/icons/sprite.svg#logo_mobile" />
-      </svg>
-      <svg class="logo__icon-tablet" width="145" height="40" aria-label="Логотип Pink" role="img">
-        <use xlink:href="img/icons/sprite.svg#logo_tablet" />
-      </svg>
-      <svg class="logo__icon-desktop" width="147" height="40" aria-label="Логотип Pink" role="img">
-        <use xlink:href="img/icons/sprite.svg#logo_desktop" />
-      </svg>
-    </a>
-    <nav class="js-nav nav">
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a class="nav__link nav__link_current" href="index.html">Главная</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">Фотографии</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">Конкурс</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">HTML Academy</a>
-        </li>
-      </ul>
-    </nav>
-    <button class="js-burger burger" type="button" aria-label="открыть меню">
-      <span class="burger__line"></span>
-    </button>
+  <div class="header__top">
+    <div class="header__container container">
+      <a class="logo" href="index.html">
+        <svg class="logo__icon-mobile" width="74" height="23" aria-label="Логотип Pink" role="img">
+          <use xlink:href="img/icons/sprite.svg#logo_mobile" />
+        </svg>
+        <svg class="logo__icon-tablet" width="145" height="40" aria-label="Логотип Pink" role="img">
+          <use xlink:href="img/icons/sprite.svg#logo_tablet" />
+        </svg>
+        <svg class="logo__icon-desktop" width="147" height="40" aria-label="Логотип Pink" role="img">
+          <use xlink:href="img/icons/sprite.svg#logo_desktop" />
+        </svg>
+      </a>
+      <nav class="js-nav nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link nav__link_current" href="index.html">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Фотографии</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Конкурс</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="js-burger burger" type="button" aria-label="открыть меню">
+        <span class="burger__line"></span>
+      </button>
+    </div>
   </div>
 
   <div class="header__intro container">
     <div class="header__decor">
       <p class="header__slogan">
-        <!-- как на планшете подогнать перенос под макет -->
-        Взгляните на жизнь <br> иначе!
+        <!-- &nbsp; - убирает пробел для коррекции переноса слов -->
+        Взгляните на&nbsp;жизнь <br> иначе!
       </p>
       <picture class="header__pic">
-        <!-- добавление фoрматов webp и avif кадрирование изображений для опимизации загрузки сайта -->
+        <!-- добавление фoрматов webp и avif - кадрирование изображений для опимизации загрузки сайта -->
         <source type="image/png" media="(min-width: 1024px)" srcset="img/phone_desktop.png" />
         <source type="image/webp" media="(min-width: 1024px)" srcset="img/phone_desktop.webp" />
-        <!-- <source type="image/avif" media="(min-width: 1024px)" srcset="img/phone_desktop.avif" /> -->
-        <source media="(min-width: 660px)" srcset="img/phone_tablet.png, img/phone_tablet.webp" />
-       
-        <!-- <source type="image/avif" media="(min-width: 660px)" srcset="img/phone_tablet.avif" />      -->
-        <img class="header__pic-mobile" src="img/phone_mobile.png" srcset="img/phone_mobile.webp" width="320" height="286" alt="приложение pink." />
-      </picture>      
+        <source type="image/avif" media="(min-width: 1024px)" srcset="img/phone_desktop.avif" /> 
+        <source type="image/png" media="(min-width: 660px)" srcset="img/phone_tablet.png" /> 
+        <source type="image/webp" media="(min-width: 660px)" srcset="img/phone_tablet.webp" />        
+        <source type="image/avif" media="(min-width: 660px)" srcset="img/phone_tablet.avif" />     
+        <img class="header__pic-mobile" src="img/phone_mobile.png" srcset="img/phone_mobile.webp, img/phone_mobile.avif" width="320"
+          height="286" alt="приложение pink." />
+      </picture>
     </div>
     <a class="header__btn" href="#">Скачать приложение</a>
     <ul class="header__download-list">
