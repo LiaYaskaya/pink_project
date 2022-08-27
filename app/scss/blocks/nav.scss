@@ -17,11 +17,11 @@
 
     @include media($desktop) {
         position: static;
-        display: block;
         flex-grow: 1;
         transform: translateX(0);
         opacity: 1;
         background-color: transparent;
+        pointer-events: auto;
     }
 }
 
@@ -75,13 +75,21 @@
     }
 }
 
+.nav__link:hover {
+    color: $nav-hover-color;
+}
+
+.nav__link:active {
+    color: rgba($nav-hover-color, 0.3);
+}
+
 @media (min-width: $desktop) {
     .nav__link {
         position: relative;
     }
 
-    .nav__link:hover {
-        color: $nav-hover-color;
+    .nav__link:active {
+        color: rgba($nav-active-color, 0.3);
     }
 
     .nav__link_current::before {

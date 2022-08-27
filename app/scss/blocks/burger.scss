@@ -22,6 +22,12 @@
     margin-top: -1.5px;
 }
 
+// как проставить ховер и актив на бургер
+
+// .burger__line:hover {
+//     background-color: $burger-hover-bg;
+// }
+
 .burger__line::after,
 .burger__line::before {
     content: " ";
@@ -31,6 +37,11 @@
     transform: translateY(10px);
     transition: transform 0.2s ease;
 }
+
+// .burger__line::after:hover,
+// .burger__line::before:hover {
+//     background-color: $burger-hover-bg;
+// }
 
 .burger__line:after {
     transform: translateY(-10px);

@@ -1,0 +1,150 @@
+.content {
+    color: $content-color;
+    @include font(14px, 24px, 400);
+    overflow: hidden;
+}
+
+.content__intro {
+    padding-top: 46px;
+    padding-bottom: 100px;
+}
+
+.content__intro-txt1,
+.content__intro-txt2 {
+    color: $content-txt-color;
+    @include font(24px, 29px, 300);
+}
+
+.content__intro-txt2 {
+    padding-top: 18px;
+}
+
+.content__container {
+    position: relative;
+    z-index: -1;
+}
+
+.content__container::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: -254px;
+    bottom: 0;
+    width: 828px;
+    background-color: $content-bg;
+    transform: skewY(-5deg);
+    z-index: -1;
+}
+
+.content__advantages-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.content__advantages-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content__desktop-pic1 {
+    display: none;
+}
+
+.content__advantages-title {
+    @include font(18px, 24px, 700);
+    padding-bottom: 20px;
+}
+
+.content__advantages-txt {
+    color: $content-txt-color;
+    padding-bottom: 43px;
+}
+
+.content__desktop-pic2 {
+    display: none;
+}
+
+.content__mobile-pic {
+    order: 1;
+}
+
+.content__info {
+    display: none;
+}
+
+.content__info-pic {}
+
+.content__info-title {
+    display: block;
+}
+
+.content__info-txt {}
+
+.content__info-link {}
+
+.content__reviews {
+    margin-top: -43px;
+}
+
+.content__reviews-info {
+    position: relative;
+}
+
+.content__reviews-info::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #fff;
+    z-index: -1;
+    margin-right: -20px;
+    margin-left: -20px;
+}
+
+.content__reviews-title {
+    display: block;
+    text-align: center;
+    @include font(18px, 30px, 700);
+    padding-top: 50px;
+    padding-bottom: 31px;
+}
+
+.content__reviews-txt {
+    line-height: 30px;
+    color: $content-txt-color;
+    padding-bottom: 44px;
+}
+
+.content__price {
+    position: relative;
+}
+
+.content__price::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -93px;
+    bottom: 0;
+    width: 506px;
+    background-color: $content-bg;
+    transform: skewY(-3deg);
+    z-index: -1;
+}
+
+.content__table {}
+
+.content__top-row1 {}
+
+.content__top-col1 {}
+
+.content__top-row2 {}
+
+.content__top-col2 {}
+
+.content__table-row {}
+
+.content__left-col {}
+
+.content__col {}
+
+.content__table-img {}

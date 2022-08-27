@@ -1,0 +1,41 @@
+.slider {}
+
+.slider__button {
+    display: none;
+}
+
+.slider__button._next {}
+
+.slider__button._prev {}
+
+.slider__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.slider__item {
+    margin-right: 19px;
+}
+
+.slider__pagination-btn {
+    width: 6px;
+    height: 6px;
+    background-color: rgba($content-pagination-bg, 0.3);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider__pagination-btn:hover {
+    background-color: rgba($content-pagination-bg, 0.6);
+}
+
+.slider__pagination-btn:active {
+    background-color: rgba($content-pagination-bg, 0.1);
+}
+
+.slider__pagination-btn._current {
+    background-color: $content-pagination-current;
+    box-shadow: 0 0 0 3px $content-pagination-bg;
+}
