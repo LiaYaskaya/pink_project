@@ -1,0 +1,181 @@
+.table {
+    width: 828px;
+    margin: 0 auto;
+    margin-bottom: 45px;
+    border-spacing: 0;
+
+    @include media($tablet) {
+        width: 608px;
+    }
+}
+
+.table__header {}
+
+.table__top-row {}
+
+.table__top-col {
+    width: 276px;
+    background-color: #283645;
+    padding: 12px 10px 25px;
+    border: 1px solid #283645;
+
+    @include media($tablet) {
+        width: 152px;
+        padding: 7px 10px;
+    }
+}
+
+.table__top-col._left {
+    border-right: 1px solid #E5E5E5;
+    border-radius: 3px 0 0 0;
+}
+
+.table__top-col._hit {
+    position: relative;
+    border-right: 1px solid #E5E5E5;
+    border-left: 1px solid #E5E5E5;
+}
+
+.table__top-col._hit::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 74px;
+    height: 74px;
+    background: url("../img/icons/hit_ribbon.png") no-repaet top left/cover;
+
+    @include media($tablet) {
+        width: 61px;
+        height: 61px;
+        background: url("../img/icons/hit_ribbon_tablet.png") no-repaet top left/cover;
+    }
+}
+
+.table__top-col._right {
+    border-radius: 0 3px 0 0;
+    border-left: 1px solid #E5E5E5;
+}
+
+.table__col-txt1,
+.table__col-txt2 {
+    display: block;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.table__col-txt1 {
+    @include font(16px, 30px, 700);
+}
+
+.table__col-txt2 {
+    @include font(18px, 30px, 300);
+}
+
+.table__body {
+    background-color: #FFFFFF;
+}
+
+@media (min-width:$tablet) {
+
+    .table__row .table__col:last-child {
+        border-right: 2px solid #E5E5E5;
+    }
+
+    .table__row:first-child .table__left-col {
+        border-left: 2px solid #E5E5E5;
+        border-top: 2px solid #E5E5E5;
+        border-top-left-radius: 1px;
+    }
+
+    .table__row:first-child .table__col {
+        border-top: 2px solid #283645;
+        border-radius: 0;
+    }
+
+    .table__row:nth-child(2) .table__left-col {
+        border-left: 2px solid #E5E5E5;
+    }
+
+    .table__row:last-child .table__left-col {
+        border-left: 2px solid #E5E5E5;
+        border-bottom: 2px solid #E5E5E5;
+        border-bottom-left-radius: 1px;
+    }
+
+    .table__row:last-child .table__col {
+        border-bottom: 2px solid #E5E5E5;
+    }  
+
+}
+
+.table__top-row .table__left-col {
+    border: none;
+}
+
+.table__left-col {
+    display: none;
+
+    @include media($tablet) {
+        display: table;
+        width: 152px;
+        @include font(14px, 30px, 400);
+        color: $content-txt-color;
+        padding: 7px 15px;
+        border: 1px solid #E5E5E5;
+    }
+}
+
+.table__left-col-name {}
+
+.table__col {
+    padding: 17px 24px;
+    border: 1px solid #E5E5E5;
+
+    @include media($tablet) {
+        padding: 8px;
+    }
+}
+
+.table__col._left {
+    border-radius: 0 0 0 3px;
+
+    @include media($tablet) {
+        border-radius: 0;
+    }
+}
+
+.table__col._right {
+    border-radius: 0 0 3px 0;
+}
+
+.table__col-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include media($tablet) {
+        justify-content: center;
+    }
+}
+
+.table__col-name {
+    @include font(14px, 30px, 400);
+    text-transform: uppercase;
+    color: $content-txt-color;
+
+    @include media($tablet) {
+        display: none;
+    }
+}
+
+.table__img-yes {
+    width: 31px;
+    height: 21px;
+}
+
+.table__img-no {
+    width: 27px;
+    height: 27px;
+}
