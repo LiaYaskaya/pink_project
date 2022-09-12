@@ -1,21 +1,51 @@
 .slider {}
 
+
+.slider__button-wrap {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
 .slider__button {
     display: none;
+
+    @include media($desktop) {
+        display: block;
+        width: 22px;
+        height: 41px;
+        color: #283645;
+        border: none;
+        cursor: pointer;
+        background: url("../img/icons/left_arrow.svg") no-repaet top center/cover;
+    }
 }
 
 .slider__button._next {}
 
-.slider__button._prev {}
+.slider__button._prev {
+    transform: rotate(180deg);
+}
 
 .slider__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
+    @include media($desktop) {
+        display: none;
+    }
 }
 
 .slider__item {
     margin-right: 19px;
+}
+
+.slider__item:last-child {
+    margin-right: 0;
 }
 
 .slider__pagination-btn {

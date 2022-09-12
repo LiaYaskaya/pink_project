@@ -5,7 +5,11 @@
     border-spacing: 0;
 
     @include media($tablet) {
-        width: 608px;
+        width: 610px;
+    }
+
+    @include media($desktop) {
+        width: 934px;
     }
 }
 
@@ -21,40 +25,59 @@
 
     @include media($tablet) {
         width: 152px;
-        padding: 7px 10px;
+        padding: 18px 10px 7px;
+    }
+
+    @include media($desktop) {
+        width: 233px;
+        padding: 12px 10px 18px;
     }
 }
 
 .table__top-col._left {
-    border-right: 1px solid #E5E5E5;
+    border-right: 1px solid #F2F2F2;
     border-radius: 3px 0 0 0;
 }
 
 .table__top-col._hit {
     position: relative;
-    border-right: 1px solid #E5E5E5;
-    border-left: 1px solid #E5E5E5;
+    border-right: 1px solid #F2F2F2;
+    border-left: 1px solid #F2F2F2;
+
+    @include media($tablet) {
+        width: 155px;
+    }
+
+    @include media($desktop) {
+        width: 234px;
+    }
 }
 
 .table__top-col._hit::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -1px;
     left: 0;
     width: 74px;
     height: 74px;
     background: url("../img/icons/hit_ribbon.png") no-repaet top left/cover;
-
+// в планшетном варианте не получается убрать с надписи
     @include media($tablet) {
         width: 61px;
         height: 61px;
         background: url("../img/icons/hit_ribbon_tablet.png") no-repaet top left/cover;
     }
+
+    @include media($desktop) {
+        width: 74px;
+        height: 74px;
+        background: url("../img/icons/hit_ribbon.png") no-repaet top left/cover;
+    }
 }
 
 .table__top-col._right {
     border-radius: 0 3px 0 0;
-    border-left: 1px solid #E5E5E5;
+    border-left: 1px solid #F2F2F2;
 }
 
 .table__col-txt1,
@@ -66,11 +89,19 @@
 }
 
 .table__col-txt1 {
-    @include font(16px, 30px, 700);
+    @include font(16px, 22px, 700);
+
+    @include media($desktop) {
+        @include font(18px, 30px, 700);
+    }
 }
 
 .table__col-txt2 {
-    @include font(18px, 30px, 300);
+    @include font(18px, 26px, 300);
+
+    @include media($desktop) {
+        @include font(24px, 30px, 300);;
+    }
 }
 
 .table__body {
@@ -89,9 +120,9 @@
         border-top-left-radius: 1px;
     }
 
+    // углы верхних ячеек внизу скруглены, можно ли исправить
     .table__row:first-child .table__col {
         border-top: 2px solid #283645;
-        border-radius: 0;
     }
 
     .table__row:nth-child(2) .table__left-col {
@@ -119,11 +150,17 @@
 
     @include media($tablet) {
         display: table;
-        width: 152px;
+        width: 153px;
         @include font(14px, 30px, 400);
         color: $content-txt-color;
         padding: 7px 15px;
         border: 1px solid #E5E5E5;
+    }
+
+    @include media($desktop) {
+        font-size: 18px;
+        width: 234px;
+        padding: 13px 22px;
     }
 }
 
@@ -136,6 +173,10 @@
     @include media($tablet) {
         padding: 8px;
     }
+
+    @include media($desktop) {
+        width: 234px;
+    }
 }
 
 .table__col._left {
@@ -147,7 +188,7 @@
 }
 
 .table__col._right {
-    border-radius: 0 0 3px 0;
+    border-radius: 0 0 1px 0;
 }
 
 .table__col-wrap {
