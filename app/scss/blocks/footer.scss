@@ -1,0 +1,137 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @include media($tablet) {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+    }
+}
+
+.footer__logo {
+    padding: 40px 0;
+
+    @include media($tablet) {
+        padding-bottom: 50px;
+    }
+
+    @include media($desktop) {
+        padding: 70px 0 85px;
+    }
+}
+
+.footer__logo-mobile {
+    width: 145px;
+    height: 40px;
+    color: #283645;
+
+    @include media($desktop) {
+        display: none;
+    }
+}
+
+.footer__logo-mobile:active {
+    opacity: 0.3;
+}
+
+.footer__logo-desktop {
+    display: none;
+
+    @include media($desktop) {
+        display: block;
+        width: 147px;
+        height: 40px;
+        color: #283645;
+    }
+}
+
+@media (min-width:$desktop) {
+    .footer__logo-desktop:hover {
+        color: #D22856;
+    }
+}
+
+.footer__logo-desktop:active {
+    color: #283645;
+    opacity: 0.3;
+}
+
+.footer__social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 38px;
+
+    @include media($tablet) {
+        margin-bottom: 0;
+    }
+}
+
+.footer__social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-right: 9px;
+    width: 54px;
+    height: 54px;
+    border: 3px solid rgba(40, 54, 69, 0.1);
+    border-radius: 50%;
+}
+
+.footer__social-link:last-child {
+    margin-right: 0;
+}
+
+@media (min-width:$desktop) {
+    .footer__social-link:hover {
+        border-color: rgba(40, 54, 69, 1);
+    }
+}
+
+.footer__social-icon {
+    width: 18px;
+    height: 18px;
+    color: #D22856;
+}
+
+.footer__social-icon:active {
+    opacity: 0.3;
+}
+
+.footer__author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    @include font(14px, 18px, 400);
+    color: #283645;
+    margin-bottom: 40px;
+
+    @include media($tablet) {
+        margin-bottom: 0;
+    }
+
+    @include media($desktop) {
+        font-size: 18px;
+    }
+}
+
+.footer__author-icon {
+    margin-left: 15px;
+    color: #D22856;
+}
+
+@media (min-width:$desktop) {
+    .footer__author:hover .footer__author-icon {
+        color: #283645;
+    }
+}
+
+.footer__author:active .footer__author-icon {
+    opacity: 0.3;
+}

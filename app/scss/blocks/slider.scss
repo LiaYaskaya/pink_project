@@ -17,7 +17,7 @@
         display: block;
         width: 22px;
         height: 41px;
-        color: #283645;
+        color: $slider-btn-color;
         border: none;
         cursor: pointer;
         background: url("../img/icons/left_arrow.svg") no-repaet top center/cover;
@@ -51,21 +51,21 @@
 .slider__pagination-btn {
     width: 6px;
     height: 6px;
-    background-color: rgba($content-pagination-bg, 0.3);
+    background-color: rgba($slider-pagination-bg, 0.3);
     border: none;
     border-radius: 50%;
     cursor: pointer;
 }
 
 .slider__pagination-btn:hover {
-    background-color: rgba($content-pagination-bg, 0.6);
+    background-color: rgba($slider-pagination-bg, 0.6);
 }
 
 .slider__pagination-btn:active {
-    background-color: rgba($content-pagination-bg, 0.1);
+    background-color: rgba($slider-pagination-bg, 0.1);
 }
 
 .slider__pagination-btn._current {
-    background-color: $content-pagination-current;
-    box-shadow: 0 0 0 3px $content-pagination-bg;
+    background-color: $slider-pagination-current;
+    box-shadow: 0 0 0 3px $slider-pagination-bg;
 }

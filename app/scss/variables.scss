@@ -5,8 +5,17 @@ $nav-bg: #283645;
 $nav-item-bg: #283645;
 $burger-bg: #FFFFFF;
 $content-bg: #F2F2F2;
-$content-pagination-bg: #283645;
 $content-reviews-bg: #FFFFFF;
+$content-advantages-bg: #F2F2F2;
+$content-advantages-gradient: #000000;
+$content-info-bg: #FFFFFF;
+$content-info-desktop: #F2F2F2;
+$slider-pagination-bg: #283645;
+$table-top-bg: #283645;
+$table-body-bg: #FFFFFF;
+$contacts-bg: #FFFFFF;
+$contacts-img-bg: #D22856;
+
 
 //backgrounds-conditions
 $top-active-bg: #283645;
@@ -14,7 +23,7 @@ $btn-active-bg: #FFFFFF;
 $btn-hover-bg: #FFFFFF;
 $nav-current-bg: #FFFFFF;
 $burger-hover-bg: #D22856;
-$content-pagination-current: #FFFFFF;
+$slider-pagination-current: #FFFFFF;
 
 //сolors
 $primary-color: #FFFFFF;
@@ -27,6 +36,13 @@ $android-icon-color: #A4C639;
 $nav-link-color: #FFFFFF;
 $content-color: #000000;
 $content-txt-color: #283645;
+$content-info-link: #D22856;
+$slider-btn-color: #283645;
+$table-top-txt: #FFFFFF;
+$table-body-txt: #283645;
+$contacts-txt: #283645;
+$contacts-link: #D22856;
+$contacts-info-before: #FFFFFF;
 
 //сolors-conditions
 $btn-active-color: #D22856;
@@ -39,6 +55,10 @@ $logo-hover-color: #D22856;
 $nav-shadow: #000000;
 $nav-inner-shadow: #FFFFFF;
 $btn-border: #FFFFFF;
+$table-top-border: #283645;
+$table-inner-border: #F2F2F2;
+$table-body-border: #E5E5E5;
+$contacts-img-shadow: #FFFFFF;
 
 //devices
 $mobile: 330px;

@@ -1,0 +1,137 @@
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $contacts-bg;
+    padding-top: 40px;
+
+    @include media($tablet) {
+        padding-top: 45px;
+    }
+
+    @include media($desktop) {
+        padding-top: 65px;
+    }
+}
+
+.contacts__info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: $contacts-txt;
+    z-index: 1;
+}
+// как лучше позиционировать этот псевдоэлемент на разных экранах. лучше отрисовывать или вставить картинку
+.contacts__info::before {
+    position: absolute;
+    content: "";
+    bottom: -45px;
+    color: $contacts-info-before;
+    border: 1200px solid transparent;
+    border-top: 246px solid;
+    border-bottom: 0;
+    z-index: -1;    
+}
+
+@media (min-width: 440px) {
+    .contacts__info::before {
+        bottom: -55px;
+    }    
+}
+
+@media (min-width: 540px) {
+    .contacts__info::before {
+        bottom: -75px;
+    }    
+}
+
+@media (min-width:$tablet) {
+    .contacts__info::before {
+        bottom: -95px;
+    } 
+}
+
+@media (min-width:930px) {
+    .contacts__info::before {
+        bottom: -105px;
+    } 
+}
+
+@media (min-width: 975px) {
+    .contacts__info::before {
+        bottom: -123px;
+    }    
+}
+
+.contacts__intro {
+    @include font(24px, 29px, 300);
+    text-align: center;
+    padding-bottom: 35px;
+
+    @include media($tablet) {
+        @include font(40px, 54px, 300);
+    }
+
+    @include media($desktop) {
+        @include font(50px, 68px, 300);
+    }
+}
+
+.contacts__txt-wrap {    
+    @include media($tablet) {
+        display: flex;
+        justify-content: center;
+        row-gap: 30px;
+        column-gap: 90px;
+        flex-wrap: wrap;
+    }
+}
+
+.contacts__txt-wrap .contacts__txt:nth-child(2) {    
+    @include media($desktop) {
+        order: 1;
+    }
+}
+
+.contacts__txt {
+    @include font(18px, 25px, 700);
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.contacts__link {
+    display: block;
+    text-decoration: none;
+    @include font(24px, 33px, 300);
+    color: $contacts-link;
+}
+
+.contacts__img-wrap {
+    position: relative;
+}
+
+.contacts__img-wrap::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 36px;
+    height: 36px;
+    transform: translateY(-50%);
+    // как сделать без малиновой окантовки
+    background-color: $contacts-img-bg;
+    box-shadow: inset 0 0 0 10px $contacts-img-shadow;
+    border-radius: 50%;
+}
+
+.contacts__img {
+    display: block;
+    width: 100%;   
+    height: auto;
+    object-fit: cover; 
+}
