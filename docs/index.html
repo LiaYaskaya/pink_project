@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PINK</title>
-    <link rel="stylesheet" href="css/main.css?t=1664278574869">
+    <title>Приложение PINK</title>
+    <link rel="stylesheet" href="css/main.css?t=1666270299705">
 </head>
 
 <body>
@@ -50,10 +50,10 @@
 
   <div class="header__intro container">
     <div class="header__decor">
-      <p class="header__slogan">
+      <h1 class="header__slogan">
         <!-- &nbsp; - убирает пробел для коррекции переноса слов -->
         Взгляните на&nbsp;жизнь <br> иначе!
-      </p>
+      </h1>
       <picture class="header__pic">
         <!-- добавление фoрматов webp и avif - кадрирование изображений для опимизации загрузки сайта -->
         <source type="image/png" media="(min-width: 1024px)" srcset="img/phone_desktop.png" />
@@ -100,42 +100,45 @@
     <!-- подключаем контентную часть -->
     <main class="content">
 
-    <div class="content__intro container">
-        <p class="content__intro-txt1">Устали от серости мегаполиса?</p>
-        <p class="content__intro-txt2">Нам есть, что вам <br> предложить!</p>
-    </div>
-
-    <div class="content__advantages-container">
-        <div class="content__advantages container">
-            <ul class="content__advantages-list">
-                <li class="content__advantages-item">
-                    <img class="content__desktop-pic1" src="img/content_desktop1.png" width="186" height="382"
-                        alt="приложение pink." />
-                    <div class="content__txt-wrap">
-                        <span class="content__advantages-title">Поднимает настроение</span>
-                        <p class="content__advantages-txt">Приложение позволит вам победить осеннюю хандру и депрессию
-                            буквально в несколько кликов!</p>
-                    </div>
-                </li>
-                <li class="content__advantages-item">
-                    <img class="content__desktop-pic2" src="img/content_desktop2.png" width="186" height="382"
-                        alt="приложение pink." />
-                    <div class="content__txt-wrap">
-                        <span class="content__advantages-title">Меняет мир вокруг</span>
-                        <p class="content__advantages-txt">Сделайте снимок и украсьте&nbsp;его смайликом
-                            или&nbsp;текстовой подписью, чтобы усилить&nbsp;эффект</p>
-                    </div>
-                </li>
-                <li class="content__advantages-item">
-                    <img class="content__mobile-pic" src="img/content_tablet.png" width="157" height="320"
-                        alt="приложение pink." />
-                    <div class="content__txt-wrap">
-                        <span class="content__advantages-title">Заводит новых&nbsp;друзей</span>
-                        <p class="content__advantages-txt">Ставьте лайки, комментируйте, делитесь фотографиями с
-                            друзьями и&nbsp;заводите новых</p>
-                    </div>
-                </li>
-            </ul>
+    <div class="content__intro">
+        <h2 class="content__intro-txt container">
+            <span class="content__intro-br">Устали от серости мегаполиса?</span>
+            <br>Нам есть, что вам <br> предложить!
+        </h2>
+        <div class="content__advantages-container">
+            <div class="content__advantages container">
+                <ul class="content__advantages-list">
+                    <li class="content__advantages-item">
+                        <img class="content__pic" src="img/content_desktop1.png" width="186" height="382"
+                            alt="приложение pink." />
+                        <div class="content__txt-wrap">
+                            <h3 class="content__advantages-title">Поднимает настроение</h3>
+                            <p class="content__advantages-txt">Приложение позволит вам победить осеннюю хандру и
+                                депрессию буквально в несколько кликов!</p>
+                        </div>
+                    </li>
+                    <li class="content__advantages-item">
+                        <img class="content__pic" src="img/content_desktop2.png" width="186" height="382"
+                            alt="приложение pink." />
+                        <div class="content__txt-wrap">
+                            <h3 class="content__advantages-title">Меняет мир вокруг</h3>
+                            <p class="content__advantages-txt">Сделайте снимок и украсьте&nbsp;его смайликом
+                                или&nbsp;текстовой подписью, чтобы усилить&nbsp;эффект</p>
+                        </div>
+                    </li>
+                    <li class="content__advantages-item">
+                        <img class="content__pic" src="img/content_tablet.png" width="157" height="320"
+                            alt="приложение pink." />
+                        <div class="content__txt-wrap">
+                            <h3 class="content__advantages-title">Заводит новых&nbsp;друзей</h3>
+                            <p class="content__advantages-txt">Ставьте лайки, комментируйте, делитесь фотографиями с
+                                друзьями и&nbsp;заводите новых</p>
+                        </div>
+                    </li>
+                </ul>
+                <img class="content__img" src="img/content_tablet.png" width="157" height="320"
+                    alt="приложение pink." />
+            </div>
         </div>
     </div>
 
@@ -143,9 +146,7 @@
         <div class="content__info container">
             <img class="content__info-pic" src="img/content_pic.png" width="238" height="276" alt="эффект 24 часа.">
             <div class="content__info-wrap">
-                <!-- как сделать перенос на планшетной версии -->
-                <span class="content__info-title">Эффект на&nbsp;24&nbsp;часа!</span>
-                <!-- как сделать перенос на desktop версии -->
+                <h2 class="content__info-title">Эффект на&nbsp;24&nbsp;часа!</h2>
                 <p class="content__info-txt">Британские ученые провели исследования и&nbsp;доказали,
                     что&nbsp;положительный эффект от&nbsp;использования приложения длится целые сутки!</p>
                 <a class="content__info-link" href="#">Узнать больше об исследовании</a>
@@ -181,7 +182,8 @@
 
     <div class="content__price-container">
         <section class="content__price container">
-            <table class="table">
+            <!-- атрибуты для сброса табличных отступов -->
+            <table class="table" cellpadding="0" cellspacing="0" border="0">
                 <thead class="table__header">
                     <tr class="table__top-row">
                         <th class="table__left-col"></th>
@@ -202,25 +204,30 @@
                 <tbody class="table__body">
                     <tr class="table__row">
                         <td class="table__left-col">
-                            <!-- есть ли смысл в этом спане -->
                             <span class="table__left-col-name">Розовый фильтр</span>
                         </td>
                         <td class="table__col">
                             <div class="table__col-wrap">
                                 <span class="table__col-name">Розовый фильтр</span>
-                                <img class="table__img-yes" src="img/icons/yes.png" width="31" height="21" alt="да.">
+                                <svg class="table__img-yes" width="31" height="21" aria-label="да" role="img">
+                                    <use xlink:href="img/icons/sprite.svg#yes" />
+                                </svg>
                             </div>
                         </td>
                         <td class="table__col">
                             <div class="table__col-wrap">
                                 <span class="table__col-name">Розовый фильтр</span>
-                                <img class="table__img-yes" src="img/icons/yes.png" width="31" height="21" alt="да.">
+                                <svg class="table__img-yes" width="31" height="21" aria-label="да" role="img">
+                                    <use xlink:href="img/icons/sprite.svg#yes" />
+                                </svg>
                             </div>
                         </td>
                         <td class="table__col">
                             <div class="table__col-wrap">
                                 <span class="table__col-name">Розовый фильтр</span>
-                                <img class="table__img-yes" src="img/icons/yes.png" width="31" height="21" alt="да.">
+                                <svg class="table__img-yes" width="31" height="21" aria-label="да" role="img">
+                                    <use xlink:href="img/icons/sprite.svg#yes" />
+                                </svg>
                             </div>
                         </td>
                     </tr>
@@ -231,19 +238,25 @@
                         <td class="table__col">
                             <div class="table__col-wrap">
                                 <span class="table__col-name">Смайлики</span>
-                                <img class="table__img-no" src="img/icons/no.png" width="27" height="27" alt="нет.">
+                                <svg class="table__img-no" width="27" height="27" aria-label="нет" role="img">
+                                    <use xlink:href="img/icons/sprite.svg#no" />
+                                </svg>
                             </div>
                         </td>
                         <td class="table__col">
                             <div class="table__col-wrap">
                                 <span class="table__col-name">Смайлики</span>
-                                <img class="table__img-yes" src="img/icons/yes.png" width="31" height="21" alt="да.">
+                                <svg class="table__img-yes" width="31" height="21" aria-label="да" role="img">
+                                    <use xlink:href="img/icons/sprite.svg#yes" />
+                                </svg>
                             </div>
                         </td>
                         <td class="table__col">
                             <div class="table__col-wrap">
                                 <span class="table__col-name">Смайлики</span>
-                                <img class="table__img-yes" src="img/icons/yes.png" width="31" height="21" alt="да.">
+                                <svg class="table__img-yes" width="31" height="21" aria-label="да" role="img">
+                                    <use xlink:href="img/icons/sprite.svg#yes" />
+                                </svg>
                             </div>
                         </td>
                     </tr>
@@ -254,24 +267,32 @@
                         <td class="table__col _left">
                             <div class="table__col-wrap">
                                 <span class="table__col-name">Комментарии</span>
-                                <img class="table__img-no" src="img/icons/no.png" width="27" height="27" alt="нет.">
+                                <svg class="table__img-no" width="27" height="27" aria-label="нет" role="img">
+                                    <use xlink:href="img/icons/sprite.svg#no" />
+                                </svg>
                             </div>
                         </td>
                         <td class="table__col">
                             <div class="table__col-wrap">
                                 <span class="table__col-name">Комментарии</span>
-                                <img class="table__img-no" src="img/icons/no.png" width="27" height="27" alt="нет.">
+                                <svg class="table__img-no" width="27" height="27" aria-label="нет" role="img">
+                                    <use xlink:href="img/icons/sprite.svg#no" />
+                                </svg>
                             </div>
                         </td>
                         <td class="table__col _right">
                             <div class="table__col-wrap">
                                 <span class="table__col-name">Комментарии</span>
-                                <img class="table__img-yes" src="img/icons/yes.png" width="31" height="21" alt="да.">
+                                <svg class="table__img-yes" width="31" height="21" aria-label="да" role="img">
+                                    <use xlink:href="img/icons/sprite.svg#yes" />
+                                </svg>
                             </div>
                         </td>
                     </tr>
                 </tbody>
             </table>
+        </section>
+        <div class="content__slider-wrap">
             <div class="slider">
                 <ol class="slider__list">
                     <li class="slider__item">
@@ -285,12 +306,12 @@
                     </li>
                 </ol>
             </div>
-        </section>
+        </div>
     </div>
 
     <section class="contacts">
         <div class="contacts__info container">
-            <p class="contacts__intro">Остались вопросы? <br> Свяжитесь с нами!</p>
+            <h2 class="contacts__intro">Остались вопросы? <br> Свяжитесь с нами!</h2>
             <div class="contacts__txt-wrap">
                 <p class="contacts__txt">Звоните:
                     <a class="contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
@@ -338,7 +359,7 @@
             </svg>
         </a>
     </div>
-    <a class="footer__author" href=#">Разработано
+    <a class="footer__author" href="#">Разработано
         <svg class="footer__author-icon" width="27" height="34" aria-label="логотип HTML Academy" role="img">
             <use xlink:href="img/icons/sprite.svg#author"/>
         </svg>

@@ -1,9 +1,8 @@
 .table {
     width: 828px;
-    margin: 0 auto;
-    margin-bottom: 45px;
     border-spacing: 0;
-    overflow: hidden;
+    // чтобы были фиксированные ячейки, а не зависящие от контента
+    table-layout: fixed;
 
     @include media($tablet) {
         width: 610px;
@@ -14,9 +13,9 @@
     }
 }
 
-.table__header {}
-
-.table__top-row {}
+.table__header {
+    transform: translateY(2px);
+}
 
 .table__top-col {
     width: 276px;
@@ -62,7 +61,7 @@
     width: 74px;
     height: 74px;
     background: url("../img/icons/hit_ribbon.png") no-repaet top left/cover;
-// в планшетном варианте не получается убрать с надписи
+
     @include media($tablet) {
         width: 61px;
         height: 61px;
@@ -121,7 +120,6 @@
         border-top-left-radius: 1px;
     }
 
-    // углы верхних ячеек внизу скруглены, можно ли исправить
     .table__row:first-child .table__col {
         border-top: 2px solid $table-top-border;
     }
@@ -165,8 +163,6 @@
     }
 }
 
-.table__left-col-name {}
-
 .table__col {
     padding: 17px 24px;
     border: 1px solid $table-body-border;
@@ -178,18 +174,6 @@
     @include media($desktop) {
         width: 234px;
     }
-}
-
-.table__col._left {
-    border-radius: 0 0 0 3px;
-
-    @include media($tablet) {
-        border-radius: 0;
-    }
-}
-
-.table__col._right {
-    border-radius: 0 0 1px 0;
 }
 
 .table__col-wrap {
@@ -215,9 +199,11 @@
 .table__img-yes {
     width: 31px;
     height: 21px;
+    color: $table-img-yes;
 }
 
 .table__img-no {
     width: 27px;
     height: 27px;
+    color: $table-img-no;
 }

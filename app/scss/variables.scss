@@ -40,6 +40,8 @@ $content-info-link: #D22856;
 $slider-btn-color: #283645;
 $table-top-txt: #FFFFFF;
 $table-body-txt: #283645;
+$table-img-yes: #3DC644;
+$table-img-no: #F25B26;
 $contacts-txt: #283645;
 $contacts-link: #D22856;
 $contacts-info-before: #FFFFFF;
@@ -58,7 +60,7 @@ $btn-border: #FFFFFF;
 $table-top-border: #283645;
 $table-inner-border: #F2F2F2;
 $table-body-border: #E5E5E5;
-$contacts-img-shadow: #FFFFFF;
+$contacts-img-border: #FFFFFF;
 
 //devices
 $mobile: 330px;
@@ -67,3 +69,9 @@ $desktop: 1024px;
 
 //fonts
 $font-variables: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+
+
+// header__button - пример класса и наименования переменных цвета к нему ниже
+// color
+// header-button-bg-color:
+// header-button-hover-bg-color:

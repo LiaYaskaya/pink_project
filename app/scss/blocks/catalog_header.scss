@@ -1,0 +1,30 @@
+.header {
+    color: $primary-color;
+    @include font(18px, 24px, 300);
+    overflow: hidden;
+    background: $primary-bg url("../img/back_mobile.jpg") no-repeat top center/cover;
+
+    @include media($mobile) {
+        background: $primary-bg url("../img/back_tablet.jpg") no-repeat top center/cover;
+    }
+
+    @include media($desktop) {
+        background: $primary-bg url("../img/back_desktop.jpg") no-repeat top center/cover;
+    }
+}
+
+.header__title {
+    display: block;
+    text-align: center;
+    @include font(24px, 33px, 300);
+    padding: 36px 20px 84px 20px;
+
+    @include media($tablet) {
+        @include font(50px, 68px, 300);
+        padding: 81px 20px 143px 20px;
+    }
+
+    @include media($desktop) {
+        padding: 74px 20px 104px 20px;
+    }
+}
