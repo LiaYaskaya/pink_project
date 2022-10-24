@@ -1,0 +1,49 @@
+.editing {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 34px;
+
+    @include media($tablet) {
+        padding-bottom: 0;
+    }
+}
+
+.editing__wrap {
+    display: flex;
+    align-items: center;
+    
+    @include media($tablet) {
+        border-bottom: 1px solid rgba(40, 54, 69, 0.1);
+    }
+}
+
+.editing__wrap .range {
+    display: none;
+
+    @include media($tablet) {
+        display: block;
+    }
+}
+
+.editing__btn {
+    border: none;
+    background-color: transparent;
+    padding: 27px 28px 23px 0;
+}
+
+.editing__btn._active .editing__icon {
+    color: #D22856;
+}
+
+.editing__icon {
+    width: 48px;
+    height: 44px;
+    color: rgba(40, 54, 69, 0.3);
+
+    @include media($tablet) {
+        width: 24px;
+        height: 22px;
+        color: #D22856;
+    }
+}

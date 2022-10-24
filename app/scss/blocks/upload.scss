@@ -1,19 +1,89 @@
 .upload {}
 
-.upload__title {}
+.upload__title {
+    @include font(14px, 30px, 400);
+    padding: 20px 20px 40px;
+    text-align: center;
 
-.upload__wrap {}
+    @include media($tablet) {
+        font-size: 18px;
+        padding: 65px 20px;
+    }
+}
 
-.upload__img {}
+.upload__wrap {
+    background-color: #F2F2F2;
+    padding: 20px 20px 40px;
+    max-width: 940px;
 
-.upload__editing {}
+    @include media($tablet) {
+        display: flex;
+        padding: 54px 20px;
+        gap: 45px;
+    }
+}
 
-.upload__editing-btn {}
+.upload__wrap .range {
+    @include media($tablet) {
+        display: none;
+    }
+}
 
-.upload__editing-btn._active {}
+.upload__editing-wrap {
+    padding-bottom: 34px;
+    border-bottom: 1px solid rgba(40, 54, 69, 0.1);
 
-.upload__editing-icon {}
+    @include media($tablet) {
+        border: none;
+        padding-bottom: 0;
+    }
+}
 
-.upload__post-btn {}
+.upload__img {
+    display: block;
+    width: 280px;
+    height: 374px;
+    padding-bottom: 42px;
+    margin: 0 auto;
 
-.upload__cancel-btn {}
+    @include media($tablet) {
+        width: 300px;
+        height: 400px;
+        padding-bottom: 0;
+    }
+}
+
+.upload__btn-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    gap: 12px;
+
+    @include media($tablet) {
+        gap: 24px;
+        padding: 0;
+        padding-top: 40px;
+    }
+}
+
+.upload__btn {
+    @include font(18px, 18px, 700);
+    background-color: #F2F2F2;
+    padding: 15px;
+    border-radius: 30px;
+    width: 280px;
+}
+
+.upload__btn--post {
+    color: #D22856;
+    background-color: #F2F2F2;
+    border: 3px solid #D22856;
+}
+
+.upload__btn--cancel {
+    color: rgba(40, 54, 69, 0.1);
+    background-color: #F2F2F2;
+    border: 3px solid rgba(40, 54, 69, 0.1);
+}

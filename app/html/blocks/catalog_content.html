@@ -122,32 +122,55 @@
         </ul>
     </div>
 
-    <div class="upload container">
+    <div class="upload">
         <h2 class="upload__title">Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне!</h2>
         <div class="upload__wrap">
             <img class="upload__img" src="img/user_photos/photo_7.jpg" width="280" height="374"
                 alt="фото пользователя." />
-            <div class="upload__editing">
-                <button class="upload__editing-btn _active" type="button">
-                    <svg class="upload__editing-icon" width="48" height="44" aria-label="обрезка" role="img">
-                        <use xlink:href="img/icons/sprite.svg#crop" />
-                    </svg>
-                </button>
-                <button class="upload__editing-btn" type="button">
-                    <svg class="upload__editing-icon" width="48" height="44" aria-label="заливка" role="img">
-                        <use xlink:href="img/icons/sprite.svg#fill" />
-                    </svg>
-                </button>
-                <button class="upload__editing-btn" type="button">
-                    <svg class="upload__editing-icon" width="48" height="44" aria-label="контраст" role="img">
-                        <use xlink:href="img/icons/sprite.svg#contrast" />
-                    </svg>
-                </button>
+            <div class="upload__wrap-wrap">
+                <div class="upload__editing-wrap">
+                    <div class="editing">
+                        <div class="editing__wrap">
+                            <button class="editing__btn _active" type="button">
+                                <svg class="editing__icon" width="48" height="44" aria-label="обрезка" role="img">
+                                    <use xlink:href="img/icons/sprite.svg#crop" />
+                                </svg>
+                            </button>
+                            <div class="range">
+                                <buttton class="range__btn" type="button"></buttton>
+                            </div>
+                        </div>
+                        <div class="editing__wrap">
+                            <button class="editing__btn" type="button">
+                                <svg class="editing__icon" width="48" height="44" aria-label="обрезка" role="img">
+                                    <use xlink:href="img/icons/sprite.svg#fill" />
+                                </svg>
+                            </button>
+                            <div class="range">
+                                <buttton class="range__btn" type="button"></buttton>
+                            </div>
+                        </div>
+                        <div class="editing__wrap">
+                            <button class="editing__btn" type="button">
+                                <svg class="editing__icon" width="48" height="44" aria-label="обрезка" role="img">
+                                    <use xlink:href="img/icons/sprite.svg#contrast" />
+                                </svg>
+                            </button>
+                            <div class="range">
+                                <buttton class="range__btn" type="button"></buttton>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="range">
+                        <buttton class="range__btn" type="button"></buttton>
+                    </div>
+                </div>
+                <div class="upload__btn-wrap">
+                    <button class="upload__btn upload__btn--post" type="button">Запостить</button>
+                    <button class="upload__btn upload__btn--cancel" type="button">Отмена</button>
+                </div>
             </div>
-            <span></span>
         </div>
-        <button class="upload__post-btn" type="button">Запостить</button>
-        <button class="upload__cancel-btn" type="button">Отмена</button>
     </div>
 
 </main>

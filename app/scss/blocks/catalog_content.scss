@@ -38,7 +38,8 @@
 
     @include media($desktop) {
         grid-template-columns: repeat(3, 300px);
-        gap: 50px;
+        column-gap: 20px;
+        row-gap: 50px;
     }
 }
 

@@ -1,0 +1,26 @@
+.range {
+    position: relative;
+    width: 240px;
+    height: 2px;
+    background-color: #283645;
+    margin: 0 auto;
+    isolation: isolate;
+
+    @include media($tablet) {
+        width: 202px;
+    }
+}
+
+.range__btn {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    border: 2px solid #D22856;
+    border-radius: 50%;
+    top: 50%;
+    right: 33px;
+    transform: translateY(-50%);
+    z-index: 1;
+}
