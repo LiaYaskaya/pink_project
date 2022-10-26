@@ -2,12 +2,17 @@
     position: relative;
     width: 240px;
     height: 2px;
-    background-color: #283645;
+    background-color: $range-bg;
     margin: 0 auto;
     isolation: isolate;
 
     @include media($tablet) {
         width: 202px;
+        margin: 0;
+    }
+
+    @include media($desktop) {
+        width: 288px;
     }
 }
 
@@ -16,11 +21,15 @@
     width: 14px;
     height: 14px;
     cursor: pointer;
-    background-color: #FFFFFF;
-    border: 2px solid #D22856;
+    background-color: $range-btn-bg;
+    border: 2px solid $range-btn-border;
     border-radius: 50%;
     top: 50%;
     right: 33px;
     transform: translateY(-50%);
     z-index: 1;
+}
+
+.range__btn:active {
+    background-color: $range-btn-active-bg;
 }

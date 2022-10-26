@@ -2,19 +2,35 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     padding-bottom: 34px;
+    gap: 35px;
 
     @include media($tablet) {
         padding-bottom: 0;
+        justify-content: flex-start;
+        gap: 0;
     }
 }
 
 .editing__wrap {
     display: flex;
     align-items: center;
-    
+
     @include media($tablet) {
-        border-bottom: 1px solid rgba(40, 54, 69, 0.1);
+        display: grid;
+        grid-template-columns: 50px 225px;
+        border-bottom: 1px solid $editing-border;
+    }
+
+    @include media($desktop) {
+        grid-template-columns: 95px 315px;
+    }
+}
+
+.editing__wrap:last-child {
+    @include media($desktop) {
+        border: none;
     }
 }
 
@@ -26,24 +42,84 @@
     }
 }
 
+.editing__wrap:first-child .range .range__btn {
+    @include media($tablet) {
+        right: 28px;
+    }
+
+    @include media($desktop) {
+        right: 40px;
+    }
+}
+
+.editing__wrap:nth-child(2) .range .range__btn {
+    @include media($tablet) {
+        right: 163px;
+    }
+
+    @include media($desktop) {
+        right: 238px;
+    }
+}
+
+.editing__wrap:nth-child(3) .range .range__btn {
+    @include media($tablet) {
+        right: 92px;
+    }
+
+    @include media($desktop) {
+        right: 137px;
+    }
+}
+
 .editing__btn {
     border: none;
     background-color: transparent;
-    padding: 27px 28px 23px 0;
+    cursor: pointer;
+
+    @include media($tablet) {
+        padding: 25px 0 21px;
+        margin-right: auto;
+    }
+
+    @include media($desktop) {
+        padding: 12px 0;
+    }
 }
 
 .editing__btn._active .editing__icon {
-    color: #D22856;
+    color: $editing-icon-active-color;
+}
+
+.editing__btn._active .editing__icon:hover {
+    @include media($desktop) {
+        color: $editing-icon-hover-color;
+    }
 }
 
 .editing__icon {
     width: 48px;
     height: 44px;
-    color: rgba(40, 54, 69, 0.3);
+    color: $editing-icon-color;
 
     @include media($tablet) {
         width: 24px;
         height: 22px;
-        color: #D22856;
+        color: $editing-icon-tablet-color;
+    }
+
+    @include media($desktop) {
+        width: 48px;
+        height: 44px;
+    }
+}
+
+.editing__icon:active {
+    color: $editing-icon-active-color;
+}
+
+.editing__icon:hover {
+    @include media($desktop) {
+        color: $editing-icon-hover-color;
     }
 }

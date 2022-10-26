@@ -15,6 +15,13 @@ $table-top-bg: #283645;
 $table-body-bg: #FFFFFF;
 $contacts-bg: #FFFFFF;
 $contacts-img-bg: #D22856;
+$catalog-profile-bg: #F2F2F2;
+$upload-bg: #F2F2F2;
+$upload-btn-bg: #F2F2F2;
+$upload-btn-post-bg: #F2F2F2;
+$upload-btn-cancel-bg: #F2F2F2;
+$range-bg: #283645;
+$range-btn-bg: #FFFFFF;
 
 
 //backgrounds-conditions
@@ -24,6 +31,11 @@ $btn-hover-bg: #FFFFFF;
 $nav-current-bg: #FFFFFF;
 $burger-hover-bg: #D22856;
 $slider-pagination-current: #FFFFFF;
+$upload-btn-post-active-bg: #D22856;
+$upload-btn-post-hover-bg: #D22856;
+$upload-btn-cancel-active-bg: rgba(40, 54, 69, 0.3);
+$upload-btn-cancel-hover-bg: rgba(40, 54, 69, 0.3);
+$range-btn-active-bg: #D22856;
 
 //сolors
 $primary-color: #FFFFFF;
@@ -45,6 +57,11 @@ $table-img-no: #F25B26;
 $contacts-txt: #283645;
 $contacts-link: #D22856;
 $contacts-info-before: #FFFFFF;
+$catalog-like-btn-color: #D22856;
+$upload-btn-post-color: #D22856;
+$upload-btn-cancel-color: rgba(40, 54, 69, 0.1);
+$editing-icon-color: rgba(40, 54, 69, 0.3);
+$editing-icon-tablet-color: #D22856;
 
 //сolors-conditions
 $btn-active-color: #D22856;
@@ -52,6 +69,12 @@ $btn-hover-color: #D22856;
 $nav-hover-color: #D22856;
 $nav-active-color: #FFFFFF;
 $logo-hover-color: #D22856;
+$upload-btn-post-active-color: rgba(255, 255, 255, 0.3);
+$upload-btn-post-hover-color: #FFFFFF;
+$upload-btn-cancel-active-color: rgba(255, 255, 255, 0.3);
+$upload-btn-cancel-hover-color: rgba(40, 54, 69, 0.3);
+$editing-icon-active-color: #D22856;
+$editing-icon-hover-color: rgba(40, 54, 69, 0.5);
 
 // colors-borders and shadows
 $nav-shadow: #000000;
@@ -61,6 +84,11 @@ $table-top-border: #283645;
 $table-inner-border: #F2F2F2;
 $table-body-border: #E5E5E5;
 $contacts-img-border: #FFFFFF;
+$upload-editing-border: rgba(40, 54, 69, 0.1);
+$editing-border: rgba(40, 54, 69, 0.1);
+$upload-btn-post-border: #D22856;
+$upload-btn-cancel-border: rgba(40, 54, 69, 0.1);
+$range-btn-border: #D22856;
 
 //devices
 $mobile: 330px;

@@ -1,5 +1,3 @@
-.upload {}
-
 .upload__title {
     @include font(14px, 30px, 400);
     padding: 20px 20px 40px;
@@ -11,15 +9,24 @@
     }
 }
 
-.upload__wrap {
-    background-color: #F2F2F2;
+.upload__container {
+    background-color: $upload-bg;
     padding: 20px 20px 40px;
     max-width: 940px;
+    margin: 0 auto;
 
     @include media($tablet) {
-        display: flex;
+        display: grid;
+        grid-template-columns: 300px 275px;
+        justify-content: center;
         padding: 54px 20px;
         gap: 45px;
+    }
+
+    @include media($desktop) {
+        grid-template-columns: 300px 410px;
+        padding: 57px 60px 57px 80px;
+        gap: 90px;
     }
 }
 
@@ -31,11 +38,12 @@
 
 .upload__editing-wrap {
     padding-bottom: 34px;
-    border-bottom: 1px solid rgba(40, 54, 69, 0.1);
+    border-bottom: 1px solid $upload-editing-border;
 
     @include media($tablet) {
         border: none;
         padding-bottom: 0;
+        margin-top: -15px;
     }
 }
 
@@ -64,27 +72,67 @@
     @include media($tablet) {
         gap: 24px;
         padding: 0;
-        padding-top: 40px;
+        padding-top: 65px;
         align-items: flex-start;
+    }
+
+    @include media($desktop) {
+        flex-direction: row;
+        gap: 44px;
+        padding-top: 144px;
     }
 }
 
 .upload__btn {
     @include font(18px, 18px, 700);
-    background-color: #F2F2F2;
+    background-color: $upload-btn-bg;
     padding: 15px;
     border-radius: 30px;
     width: 280px;
+    cursor: pointer;
+
+    @include media($tablet) {
+        width: 260px;
+    }
+
+    @include media($desktop) {
+        width: 183px;
+    }
 }
 
 .upload__btn--post {
-    color: #D22856;
-    background-color: #F2F2F2;
-    border: 3px solid #D22856;
+    color: $upload-btn-post-color;
+    background-color: $upload-btn-post-bg;
+    border: 3px solid $upload-btn-post-border;
+}
+
+.upload__btn--post:active {
+    color: $upload-btn-post-active-color;
+    background-color: $upload-btn-post-active-bg;
+}
+
+.upload__btn--post:hover {
+    @include media($desktop) {
+        color: $upload-btn-post-hover-color;
+        background-color: $upload-btn-post-hover-bg;
+    }
 }
 
 .upload__btn--cancel {
-    color: rgba(40, 54, 69, 0.1);
-    background-color: #F2F2F2;
-    border: 3px solid rgba(40, 54, 69, 0.1);
+    color: $upload-btn-cancel-color;
+    background-color: $upload-btn-cancel-bg;
+    border: 3px solid $upload-btn-cancel-border;
+}
+
+.upload__btn--cancel:active {
+    color: $upload-btn-cancel-active-color;
+    background-color: $upload-btn-cancel-active-bg;
+    border: 3px solid transparent;
+}
+
+.upload__btn--cancel:hover {
+    @include media($desktop) {
+        color: $upload-btn-cancel-hover-color;
+        border: 3px solid $upload-btn-cancel-hover-bg;
+    }
 }
