@@ -1,0 +1,8 @@
+// как это можно сделать без отдельного файла
+.header__title_form {
+    padding-bottom: 51px;
+
+    @include media($tablet) {
+        padding-bottom: 74px;
+    }
+}

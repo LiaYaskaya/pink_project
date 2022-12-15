@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Каталог PINK</title>
-    <link rel="stylesheet" href="css/main.css?t=1666787395221">
+    <link rel="stylesheet" href="css/main.css?t=1671129341634">
 </head>
 
 <body>
@@ -32,10 +32,10 @@
               <a class="nav__link" href="index.html">Главная</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link nav__link_current" href="#">Фотографии</a>
+              <a class="nav__link nav__link_current" href="catalog.html">Фотографии</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">Конкурс</a>
+              <a class="nav__link" href="form.html">Конкурс</a>
             </li>
             <li class="nav__item">
               <a class="nav__link" href="#">HTML Academy</a>
@@ -60,7 +60,8 @@
             Видите,&nbsp;как не хватает ваших?</h2>
         <ul class="catalog__content-list">
             <li class="catalog__content-item">
-                <a class="catalog__img-link" href="#">
+                <div class="catalog__img-item">Панорама дня</div>
+                <a class="catalog__img-link" href="#">                    
                     <picture class="catalog__pic">
                         <source type="image/jpg" media="(min-width: 1024px)"
                             srcset="img/user_photos/panorama_desktop.jpg" />
@@ -81,7 +82,12 @@
                     </a>
                     <p class="catalog__txt">Прыгать или нет? Напишите в комментарии свой совет и смотрите&nbsp;прямую
                         трансляцию в перископе, задавайте свои вопросы!</p>
-                    <button class="catalog__like-btn" type="button">Нравится: 215</button>
+                    <button class="catalog__like-btn" type="button">
+                        <svg class="catalog__like-icon _first" width="13" height="12" aria-label="Поставить лайк" role="img">
+                            <use xlink:href="img/icons/sprite.svg#like_icon" />
+                        </svg>
+                        Нравится: 215
+                    </button>
                 </div>
             </li>
             <li class="catalog__content-item">
@@ -96,7 +102,12 @@
                         </h3>
                     </a>
                     <p class="catalog__txt">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-                    <button class="catalog__like-btn" type="button">Нравится: 356</button>
+                    <button class="catalog__like-btn" type="button">
+                        <svg class="catalog__like-icon" width="13" height="12" aria-label="Поставить лайк" role="img">
+                            <use xlink:href="img/icons/sprite.svg#like_icon" />
+                        </svg>
+                        Нравится: 356
+                    </button>
                 </div>
             </li>
             <li class="catalog__content-item">
@@ -111,7 +122,12 @@
                         </h3>
                     </a>
                     <p class="catalog__txt">Соседи будут рады!</p>
-                    <button class="catalog__like-btn" type="button">Нравится: 666</button>
+                    <button class="catalog__like-btn" type="button">
+                        <svg class="catalog__like-icon" width="13" height="12" aria-label="Поставить лайк" role="img">
+                            <use xlink:href="img/icons/sprite.svg#like_icon" />
+                        </svg>
+                        Нравится: 666
+                    </button>
                 </div>
             </li>
             <li class="catalog__content-item">
@@ -126,7 +142,12 @@
                         </h3>
                     </a>
                     <p class="catalog__txt">Здесь могла быть ваша цитата о высоком и вечном.</p>
-                    <button class="catalog__like-btn" type="button">Нравится: 215</button>
+                    <button class="catalog__like-btn" type="button">
+                        <svg class="catalog__like-icon" width="13" height="12" aria-label="Поставить лайк" role="img">
+                            <use xlink:href="img/icons/sprite.svg#like_icon" />
+                        </svg>
+                        Нравится: 215
+                    </button>
                 </div>
             </li>
             <li class="catalog__content-item">
@@ -141,7 +162,12 @@
                         </h3>
                     </a>
                     <p class="catalog__txt">Самая кубанская в мире!</p>
-                    <button class="catalog__like-btn" type="button">Нравится: 4</button>
+                    <button class="catalog__like-btn" type="button">
+                        <svg class="catalog__like-icon" width="13" height="12" aria-label="Поставить лайк" role="img">
+                            <use xlink:href="img/icons/sprite.svg#like_icon" />
+                        </svg>
+                        Нравится: 4
+                    </button>
                 </div>
             </li>
             <li class="catalog__content-item">
@@ -156,7 +182,12 @@
                         </h3>
                     </a>
                     <p class="catalog__txt">Где снег-то?</p>
-                    <button class="catalog__like-btn" type="button">Нравится: 150</button>
+                    <button class="catalog__like-btn" type="button">
+                        <svg class="catalog__like-icon" width="13" height="12" aria-label="Поставить лайк" role="img">
+                            <use xlink:href="img/icons/sprite.svg#like_icon" />
+                        </svg>
+                        Нравится: 150
+                    </button>
                 </div>
             </li>
             <li class="catalog__content-item">
@@ -171,13 +202,18 @@
                         </h3>
                     </a>
                     <p class="catalog__txt">Всем GM и взаимные лайки!</p>
-                    <button class="catalog__like-btn" type="button">Нравится: 2560</button>
+                    <button class="catalog__like-btn" type="button">
+                        <svg class="catalog__like-icon" width="13" height="12" aria-label="Поставить лайк" role="img">
+                            <use xlink:href="img/icons/sprite.svg#like_icon" />
+                        </svg>
+                        Нравится: 2560
+                    </button>
                 </div>
             </li>
         </ul>
     </div>
 
-    <div class="upload">
+    <section class="upload">
         <h2 class="upload__title">Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне!</h2>
         <div class="upload__container">
             <img class="upload__img" src="img/user_photos/photo_7.jpg" width="280" height="374"
@@ -192,7 +228,7 @@
                                 </svg>
                             </button>
                             <div class="range">
-                                <buttton class="range__btn" type="button"></buttton>
+                                <button class="range__btn" type="button"></button>
                             </div>
                         </div>
                         <div class="editing__wrap">
@@ -202,7 +238,7 @@
                                 </svg>
                             </button>
                             <div class="range">
-                                <buttton class="range__btn" type="button"></buttton>
+                                <button class="range__btn" type="button"></button>
                             </div>
                         </div>
                         <div class="editing__wrap">
@@ -212,12 +248,12 @@
                                 </svg>
                             </button>
                             <div class="range">
-                                <buttton class="range__btn" type="button"></buttton>
+                                <button class="range__btn" type="button"></button>
                             </div>
                         </div>
                     </div>
                     <div class="range">
-                        <buttton class="range__btn" type="button"></buttton>
+                        <button class="range__btn" type="button"></button>
                     </div>
                 </div>
                 <div class="upload__btn-wrap">
@@ -226,7 +262,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
 </main>
 

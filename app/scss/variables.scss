@@ -16,12 +16,25 @@ $table-body-bg: #FFFFFF;
 $contacts-bg: #FFFFFF;
 $contacts-img-bg: #D22856;
 $catalog-profile-bg: #F2F2F2;
+$catalog-pic-before-bg: #D22856;
 $upload-bg: #F2F2F2;
 $upload-btn-bg: #F2F2F2;
 $upload-btn-post-bg: #F2F2F2;
 $upload-btn-cancel-bg: #F2F2F2;
 $range-bg: #283645;
 $range-btn-bg: #FFFFFF;
+$form-content-bg: #F2F2F2;
+$form-checkbox-icon-bg: #FFFFFF;
+$form-checkbox-hidden-bg: #FFFFFF;
+$form-phone-icon-bg: #E5E5E5;
+$form-mail-icon-bg: #E5E5E5;
+$form-btn-bg: #2AAB6D;
+$research-bg: #F2F2F2;
+$research-radio-icon-bg: #FFFFFF;
+$research-radio-hidden-bg: #D22856;
+$message-bg: #FFFFFF;
+$message-error-wrap-bg: #F2F2F2;
+$message-confirm-wrap-bg: #F2F2F2;
 
 
 //backgrounds-conditions
@@ -36,6 +49,9 @@ $upload-btn-post-hover-bg: #D22856;
 $upload-btn-cancel-active-bg: rgba(40, 54, 69, 0.3);
 $upload-btn-cancel-hover-bg: rgba(40, 54, 69, 0.3);
 $range-btn-active-bg: #D22856;
+$form-btn-hover-bg: #1C9B5E;
+$form-btn-active-bg: #1C9B5E;
+$form-btn-disabled-bg: #E5E5E5;
 
 //сolors
 $primary-color: #FFFFFF;
@@ -57,11 +73,31 @@ $table-img-no: #F25B26;
 $contacts-txt: #283645;
 $contacts-link: #D22856;
 $contacts-info-before: #FFFFFF;
+$catalog-img-item-color: #FFFFFF;
 $catalog-like-btn-color: #D22856;
+$catalog-like-icon-color: #D22856;
 $upload-btn-post-color: #D22856;
 $upload-btn-cancel-color: rgba(40, 54, 69, 0.1);
 $editing-icon-color: rgba(40, 54, 69, 0.3);
 $editing-icon-tablet-color: #D22856;
+$form-title-color: #283645;
+$form-content-title-color: #D22856;
+$form-checkbox-label-color: #283645;
+$form-contacts-title-color: #D22856;
+$form-contacts-label-color: #D22856;
+$form-contacts-input-color: #283645;
+$form-phone-icon-color: #D22856;
+$form-mail-icon-color: #D22856;
+$form-comment-title-color: #D22856;
+$form-comment-txt-color: #283645;
+$form-btn-color: #FFFFFF;
+$form-required-field-color: #283645;
+$form-required-sign-color: #D22856;
+$profile-form-label-color: #D22856;
+$research-title-color: #D22856;
+$research-radio-label-color: #283645;
+$message-title-color: #000000;
+$message-txt-color: #283645;
 
 //сolors-conditions
 $btn-active-color: #D22856;
@@ -75,6 +111,9 @@ $upload-btn-cancel-active-color: rgba(255, 255, 255, 0.3);
 $upload-btn-cancel-hover-color: rgba(40, 54, 69, 0.3);
 $editing-icon-active-color: #D22856;
 $editing-icon-hover-color: rgba(40, 54, 69, 0.5);
+$form-checkbox-icon-hover-color: #283645;
+$form-checkbox-icon-active-color: #D22856;
+$form-btn-active-color: rgba(255, 255, 255, 0.3);
 
 // colors-borders and shadows
 $nav-shadow: #000000;
@@ -89,6 +128,24 @@ $editing-border: rgba(40, 54, 69, 0.1);
 $upload-btn-post-border: #D22856;
 $upload-btn-cancel-border: rgba(40, 54, 69, 0.1);
 $range-btn-border: #D22856;
+$form-content-checkbox-border: #E5E5E5;
+$form-checkbox-icon-border: #E5E5E5;
+$form-contacts-block-border: #E5E5E5;
+$form-contacts-input-border: #E5E5E5;
+$form-comment-field-border: #E5E5E5;
+$form-comment-txt-border: #E5E5E5;
+$profile-form-input-border: #E5E5E5;
+$profile-form-input-hover-boder: #283645;
+$profile-form-input-active-boder: #D22856;
+$research-radio-border: #E5E5E5;
+$research-radio-icon-shadow: E5E5E5;
+$research-radio-icon-hover-shadow: #283645;
+$research-radio-icon-active-shadow: #D22856;
+$research-radio-hidden-border: #FFFFFF;
+$research-radio-hidden-shadow: #E5E5E5;
+$research-radio-hidden-hover-shadow: #283645;
+$research-radio-hidden-active-shadow: #D22856;
+$message-shadow: rgba(0, 1, 1, 0.15);
 
 //devices
 $mobile: 330px;

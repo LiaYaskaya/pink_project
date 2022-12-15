@@ -20,14 +20,26 @@
         color: $slider-btn-color;
         border: none;
         cursor: pointer;
-        background: url("../img/icons/left_arrow.svg") no-repaet top center/cover;
+        background-color: transparent;
     }
 }
 
-.slider__button._next {}
-
 .slider__button._prev {
     transform: rotate(180deg);
+}
+
+.slider__btn-icon {
+    width: 22px;
+    height: 41px;
+    color: rgba(40, 54, 69, 0.3);
+}
+
+.slider__button:hover .slider__btn-icon {
+    color: rgba(40, 54, 69, 0.6);
+}
+
+.slider__button:active .slider__btn-icon {
+    color: rgba(40, 54, 69, 0.1);
 }
 
 .slider__list {

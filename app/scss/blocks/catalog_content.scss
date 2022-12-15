@@ -67,27 +67,31 @@
     }
 }
 
-// ?как настроить панораму, чтобы растягивалась по ширине экрана и совпадала с макетом
-.catalog__pic {
+.catalog__content-item:first-child {
     position: relative;
 }
 
-.catalog__pic::before {
+.catalog__img-item {
     position: absolute;
-    content: "";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $catalog-img-item-color;
+    @include font(12px, 24px, 700);
     width: 140px;
     height: 36px;
     top: 0;
     right: 20px;
-    background-image: url("../img/photo_sign.jpg");
+    background-color: $catalog-pic-before-bg;
+    text-transform: uppercase;
 
     @include media($tablet) {
         top: 57px;
+        right: 0;
     }
 
     @include media($desktop) {
         top: 54px;
-        right: 130px;
     }
 }
 
@@ -125,12 +129,12 @@
 
 .catalog__profile-wrap {
     width: 280px;
-    padding: 25px 10px 15px 17px;
+    padding: 20px 10px 12px 17px;
     background-color: $catalog-profile-bg;
 
     @include media($tablet) {
         width: 100%;
-        padding: 25px 30px 20px;
+        padding: 25px 30px 18px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -178,15 +182,16 @@
     @include font(12px, 24px, 300);
     text-transform: uppercase;
     color: $catalog-like-btn-color;
-    background: transparent url("../img/icons/heart.png") no-repeat center left;
+    background-color: transparent;
     border: none;
-    padding: 4px;
-    padding-left: 30px;
+    padding: 5px;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 
     @include media($tablet) {
-        padding-left: 0;
-        padding-right: 30px;
-        background-position: center right;
+        padding-right: 0;
         margin-top: auto;
         align-self: stretch;
         text-align: left;
@@ -196,5 +201,24 @@
 .catalog__content-item:first-child .catalog__profile-wrap>.catalog__like-btn {
     @include media($tablet) {
         margin-left: auto;
+    }
+}
+
+.catalog__like-icon {
+    width: 13px;
+    height: 12px;
+    color: $catalog-like-icon-color;
+    margin-right: 18px;
+
+    @include media($tablet) {
+        order: 1;
+        margin-right: 0;
+        margin-left: auto;
+    }
+}
+
+.catalog__like-icon._first {
+    @include media($tablet) {
+        margin-left: 16px;
     }
 }

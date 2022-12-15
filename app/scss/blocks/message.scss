@@ -1,0 +1,104 @@
+.message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $message-bg;
+    box-shadow: 0px 7px 15px $message-shadow;
+    border-radius: 3px;
+    margin: 0 auto;
+    width: 320px;
+
+    @include media($tablet) {
+        width: 460px;
+    }
+
+    @include media($desktop) {
+        width: 780px;
+    }
+}
+// ?почему отображается последнее окно
+.message_error {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.message_confirm {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.message__title {
+    @include font(18px, 24px, 700);
+    color: $message-title-color;
+    max-width: 330px;
+    text-align: center;
+    padding: 40px 20px 35px;
+
+    @include media($tablet) {
+        @include font(30px, 40px, 700);
+    }
+
+    @include media($desktop) {
+        max-width: 440px;
+    }
+}
+
+.message__txt {
+    @include font(14px, 24px, 400);
+    color: $message-txt-color;
+    max-width: 350px;
+    text-align: center;
+    padding: 0 20px 40px;
+
+    @include media($tablet) {
+        font-size: 18px;
+    }
+
+    @include media($desktop) {
+        max-width: 440px;
+    }
+}
+
+.message__error-wrap {
+    @include media($desktop) {
+        background-color: $message-error-wrap-bg;
+        align-self: stretch;
+    }
+}
+
+.message__error-btn {
+    margin-bottom: 50px;
+
+    @include media($tablet) {
+        width: 300px;
+    }
+
+    @include media($desktop) {
+        margin: 50px auto;
+        display: block;
+    }
+}
+
+.message__confirm-wrap {
+    background-color: $message-confirm-wrap-bg;
+    align-self: stretch;
+}
+
+.message__cofirm-btn {
+    margin: 50px auto;
+    display: block;
+
+    @include media($tablet) {
+        width: 300px;
+    }
+
+    @include media($desktop) {
+        width: 460px;
+    }
+}
