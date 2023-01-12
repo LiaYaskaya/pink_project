@@ -51,13 +51,13 @@
     display: block;
     width: 280px;
     height: 374px;
-    padding-bottom: 42px;
     margin: 0 auto;
+    margin-bottom: 42px;
 
     @include media($tablet) {
         width: 300px;
         height: 400px;
-        padding-bottom: 0;
+        margin-bottom: 0;
     }
 }
 

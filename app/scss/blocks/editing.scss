@@ -42,13 +42,28 @@
     }
 }
 
+.editing__wrap._active {
+    position: relative;
+}
+
+.editing__wrap._active .range {
+    display: block;
+    position: absolute;
+    top: 80px;
+    left: -10px;
+
+    @include media($tablet) {
+        position: static;
+    }
+}
+
 .editing__wrap:first-child .range .range__btn {
     @include media($tablet) {
-        right: 28px;
+        right: 52px;
     }
 
     @include media($desktop) {
-        right: 40px;
+        right: 64px;
     }
 }
 
