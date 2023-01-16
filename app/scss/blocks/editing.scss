@@ -16,6 +16,7 @@
 .editing__wrap {
     display: flex;
     align-items: center;
+    position: relative;
 
     @include media($tablet) {
         display: grid;
@@ -36,24 +37,35 @@
 
 .editing__wrap .range {
     display: none;
-
-    @include media($tablet) {
-        display: block;
-    }
-}
-
-.editing__wrap._active {
-    position: relative;
-}
-
-.editing__wrap._active .range {
-    display: block;
     position: absolute;
     top: 80px;
     left: -10px;
 
     @include media($tablet) {
+        display: block;
         position: static;
+    }
+}
+
+.editing__wrap:nth-child(2) .range {
+    left: -100px;
+}
+
+.editing__wrap:last-child .range {
+    left: -180px;
+}
+
+.editing__wrap._active .range {
+    display: block;
+}
+
+.editing__wrap._active .editing__btn .editing__icon {
+    color: $editing-icon-active-color;
+}
+
+.editing__wrap._active .editing__btn .editing__icon:hover {
+    @include media($desktop) {
+        color: $editing-icon-hover-color;
     }
 }
 
@@ -99,16 +111,6 @@
 
     @include media($desktop) {
         padding: 12px 0;
-    }
-}
-
-.editing__btn._active .editing__icon {
-    color: $editing-icon-active-color;
-}
-
-.editing__btn._active .editing__icon:hover {
-    @include media($desktop) {
-        color: $editing-icon-hover-color;
     }
 }
 
