@@ -3,10 +3,8 @@
     <h2 class="form__title">Поделитесь своей историей и получите шанс выиграть ценный&nbsp;приз&nbsp;— 1000 миль на вашу
         бонусную карту! <span class="form__extra-title">Пожалуйста, заполните форму ниже:</span></h2>
 
-    <div class="form__wrap">
-
-        <form class="profile" action="https://echo.htmlacademy.ru/" method="post">
-            <div class="container">
+        <form class="form__user" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="profile container">
                 <div class="profile__wrap">
                     <label class="profile__form-label" for="surname">Фамилия:</label>
                     <input class="profile__form-input" type="text" id="surname" name="surname"
@@ -23,10 +21,8 @@
                         placeholder="Ну и отчество тоже">
                 </div>
             </div>
-        </form>
 
-        <form class="form__content" action="https://echo.htmlacademy.ru/" method="get">
-            <div class="container">
+            <div class="form__content container">
                 <fieldset class="form__content-checkbox">
                     <legend class="form__content-title">Ваши безбашенные достижения&nbsp;в&nbsp;путешествии</legend>
                     <div class="form__checkbox-wrap">
@@ -69,10 +65,8 @@
                     </div>
                 </fieldset>
             </div>
-        </form>
 
-        <form class="form__contacts" action="https://echo.htmlacademy.ru/" method="post">
-            <div class="container">
+            <div class="form__contacts container">
                 <fieldset class="form__contacts-block">
                     <legend class="form__contacts-title">Контактная информация</legend>
                     <div class="form__contacts-container">
@@ -99,11 +93,9 @@
                     </div>
                 </fieldset>
             </div>
-        </form>
 
-        <div class="form__research-wrap">
-            <form class="research" action="https://echo.htmlacademy.ru/" method="get">
-                <div class="container">
+            <div class="form__research-wrap">
+                <div class="research container">
                     <fieldset class="research__radio">
                         <legend class="research__title">С каким приложением путешествовали?</legend>
                         <label class="research__radio-label" for="ios">
@@ -126,25 +118,21 @@
                         </label>
                     </fieldset>
                 </div>
-            </form>
-        </div>
+            </div>
 
-        <form class="form__comment" action="https://echo.htmlacademy.ru/" method="post">
-            <div class="container">
+            <div class="form__comment container">
                 <fieldset class="form__comment-field">
                     <legend class="form__comment-title">Опишите свои эмоции</legend>
                     <textarea class="form__comment-txt" name="comment" id="comment"
                         placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
                 </fieldset>
             </div>
+
+            <div class="form__btn-wrap container">
+                <button class="form__btn" type="button">Отправить форму</button>
+                <p class="form__required-field"><span class="form__required-sign">* </span>— обязательные поля</p>
+            </div>
         </form>
-
-        <div class="form__btn-wrap">
-            <button class="form__btn" type="button">Отправить форму</button>
-            <p class="form__required-field"><span class="form__required-sign">* </span>— обязательные поля</p>
-        </div>
-
-    </div>
 
     <div class="message message_error">
         <h2 class="message__title">Что-то пошло не так!</h2>

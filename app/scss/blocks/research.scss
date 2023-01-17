@@ -1,5 +1,6 @@
 .research {
     background-color: $research-bg;
+    margin: 0;
 
     @include media($tablet) {
         background-color: transparent;

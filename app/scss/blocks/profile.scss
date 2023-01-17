@@ -1,5 +1,6 @@
 .profile {
     padding-bottom: 24px;
+    margin: 0;
 
     @include media($tablet) {
         order: -3;
