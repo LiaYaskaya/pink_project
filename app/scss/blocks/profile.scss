@@ -36,6 +36,7 @@
     text-transform: uppercase;
     padding-bottom: 5px;
     padding-left: 23px;
+    cursor: pointer;
 
     @include media($tablet) {
         padding-left: 0;
